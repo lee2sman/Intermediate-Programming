@@ -97,3 +97,4 @@
 * Read the [Jquery](https://www.w3schools.com/jquery/)
 * Create a basic website. Add style (color, fonts, etc). Add text, buttons, and any other elements.
 * Add Jquery (or use vanilla Javascript) so that clicking/hovering or otherwise interacting with the webpage changes text/images/etc to an opposite, unintended, ironic or other message.
+* Inspiration: [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w)
