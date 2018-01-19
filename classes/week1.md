@@ -1,4 +1,4 @@
-# Class 1
+# Week 1
 
 # Editors and IDEs
 
@@ -73,3 +73,20 @@
   * Review HTML, CSS
   * Watch [Intro to HTML, CSS and DOM with P5Dom](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX)
   * Read [Intro](https://github.com/processing/p5.js/wiki/Intro-to-DOM-manipulation-and-events) to DOM manipulation and events with P5JS
+
+# CSS
+
+# Warm-up
+* Building a Text Editor in the browser - [starter code](https://gist.github.com/lee2sman/0c3fe0e05ed6f340102a6899ea04221e)
+
+### CSS units and box model tutorial
+* tutorial - [Inline Block](http://dustwell.com/div-span-inline-block.html)
+* Do [this](http://www.barelyfitz.com/screencast/html-training/css/positioning/) CSS positioning tutorial
+
+# Intro to DOM with Javascript
+* Examples
+
+# Intro to the DOM with Jquery  
+* Examples
+
+# Homework
