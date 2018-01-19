@@ -74,7 +74,9 @@
   * Watch [Intro to HTML, CSS and DOM with P5Dom](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bI1SlcCRfLH79HZrFAtBvX)
   * Read [Intro](https://github.com/processing/p5.js/wiki/Intro-to-DOM-manipulation-and-events) to DOM manipulation and events with P5JS
 
-# CSS
+# CSS for placement
+
+* We use CSS for *style*. Positioning is specified in CSS.
 
 # Warm-up
 * Building a Text Editor in the browser - [starter code](https://gist.github.com/lee2sman/0c3fe0e05ed6f340102a6899ea04221e)
@@ -90,3 +92,8 @@
 * Examples
 
 # Homework
+
+* Read [Javascript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) tutorial
+* Read the [Jquery](https://www.w3schools.com/jquery/)
+* Create a basic website. Add style (color, fonts, etc). Add text, buttons, and any other elements.
+* Add Jquery (or use vanilla Javascript) so that clicking/hovering or otherwise interacting with the webpage changes text/images/etc to an opposite, unintended, ironic or other message.
