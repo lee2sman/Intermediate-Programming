@@ -13,6 +13,7 @@ In-class time - The DOM
 * [notes](commandline.md)
 
 # Tutorial
+* [Tutorial](http://learnlayout.com) on positioning content on your site
 * [A Five Minute Guide to Better Typography](http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography)
 
 # Homework for Thursday
