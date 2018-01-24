@@ -13,7 +13,7 @@ In-class time - The DOM
 * [notes](commandline.md)
 
 # Tutorial
-* [A Five Minute Guide to Better Typography](pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography)
+* [A Five Minute Guide to Better Typography](http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography)
 
 # Homework for Thursday
 * Email me - what are your semester goals?
