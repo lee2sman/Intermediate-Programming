@@ -12,6 +12,10 @@ In-class time - The DOM
 # Working with the command line
 * [notes](commandline.md)
 
+# Tutorial
+* [A Five Minute Guide to Better Typography](pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography)
+
 # Homework for Thursday
+* Email me - what are your semester goals?
 * Do-Over [They Live](https://www.youtube.com/watch?v=JI8AMRbqY6w) project
 * Deploy to Github
