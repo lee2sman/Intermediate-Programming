@@ -16,10 +16,10 @@ In-class time - The DOM
 4. Add the link to your own stylesheet after the google font stylesheet
 5. Grab the CSS code from the tab and implement it on your own stylesheet.
 
-
 # Working with the command line
 * [notes](commandline.md)
 * On a PC, it's recommended to use [Cygwin](https://cygwin.com/)
+* [Tutorial game played in browser](http://www.mprat.org/Terminus/)
 
 # Tutorial
 * [Tutorial](http://learnlayout.com) on positioning content on your site
