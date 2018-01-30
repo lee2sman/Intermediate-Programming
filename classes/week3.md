@@ -2,6 +2,7 @@
 
 * Practice Git, GitHub and GitHub pages
 * Commandline practice - ```git clone https://github.com/lee2sman/git-adventure.git```
+* review Assignment 1
 * Back to Javascript!
   * [notes](javascript-reintro.md) on Javascript
   * [notes](week1_code/Javascript101.md) on calling Javascript files from websites
