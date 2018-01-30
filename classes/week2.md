@@ -31,7 +31,8 @@ In-class time - The DOM
 * Deploy to Github
 
 # Intro to GitHub
-* [notes](intro_to_github.md)
+* [notes](intro_to_github.md) on an introduction to git
+* [notes](github-pages.md) with step by step tutorial for a git, GitHub and GitHub pages workflow
 * Tutorial videos
   * [Intro to Github](https://www.youtube.com/watch?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&v=BCQHnlnPusY)
   * [Intro to GitHub pages](https://www.youtube.com/watch?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&v=bFVtrlyH-kc)
