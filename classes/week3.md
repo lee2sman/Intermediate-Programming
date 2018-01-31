@@ -9,11 +9,11 @@
 * Javascript play
 
 # Homework
+  * Upload your site to GitHub pages and send link to Lee
   * Read [Working With Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) if you need to!
   * Read [Introduction to ES6](https://learn.co/lessons/introduction-to-es6)
   * Watch [Introduction to Data and APIs in Javascript](https://www.youtube.com/watch?list=PLRqwX-V7Uu6a-SQiI4RtIwuOrLJGnel0r&time_continue=1&v=rJaXOFfwGVw)
     * watch 10.1, 10.2, 10.3, 10.4
-
 
 # Resources
 * [W3Schools JSON intro](https://www.w3schools.com/js/js_json_intro.asp)
