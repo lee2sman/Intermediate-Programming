@@ -6,6 +6,7 @@
 * Back to Javascript!
   * [notes](javascript-reintro.md) on Javascript
   * [notes](week1_code/Javascript101.md) on calling Javascript files from websites
+* Javascript play
 
 # Homework
   * Read [Working With Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) if you need to!
@@ -15,4 +16,5 @@
 
 
 # Resources
+* [W3Schools JSON intro](https://www.w3schools.com/js/js_json_intro.asp)
 * [Public APIs](https://github.com/toddmotto/public-apis)
