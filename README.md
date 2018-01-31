@@ -17,6 +17,7 @@ Week 1
 * JQuery Library
 
 # Week 2
+* [In-class notes](classes/week2.md)
 * Introduction to the Unix filesystem and working in the Terminal
 * Introduction to Version Control with Git, Github
 * Deploying projects with Glitch (FogCreek Software) and GitHub pages
@@ -24,6 +25,7 @@ Week 1
 * Authentication
 
 # Week 3
+* [In-class notes](classes/week3.md)
 * Broad overview of working with APIs
 * Various APIs online
 * Assignment: Visualization and queries with API
