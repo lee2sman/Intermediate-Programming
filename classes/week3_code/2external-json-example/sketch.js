@@ -1,8 +1,11 @@
 let flower;
 
+function preload(){
+    flower = loadJSON("flower.json");
+}
+
 function setup() {
   createCanvas(400, 400);
-  flower = loadJSON("flower.json");
 }
 
 function draw() {
