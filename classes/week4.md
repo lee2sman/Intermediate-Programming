@@ -38,6 +38,7 @@ XMLHttpRequest cannot load http://external-domain/service. No ‘Access-Control-
 * It prevents scripts from reading data from your domain and sending it to their servers
 * JSONP helps by pinging the server and returning JSON data wrapped in a function call with callback
 * much more detailed info can be found [here](https://www.sitepoint.com/jsonp-examples/)
+* Info on using JSONP in P5JS can be found [here](https://p5js.org/reference/#/p5/loadJSON)
 
 # API
 
