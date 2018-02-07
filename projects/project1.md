@@ -24,4 +24,4 @@ Bonus points:
 - Include a meaningful way to interact with the sketch/website.
 
 # DUE
-* By the beginning of class on March 15
+* By the beginning of class on February 15
