@@ -1,15 +1,31 @@
 # Week 4
 
 # Working with JSON, continued!
+* see [sample code](week4_code)
 
 # Callbacks
 * used in asynchronous programming
 * when data is finally loaded, THEN call (run) another function
 
+example
+
+```
+loadJSON("data.json", dataReceived);
+
+function dataReceived(){
+  //once data has been loaded, run this
+}
+```
+
 # Accessing JSON locally and via URLs
 
+```loadJSON("flower.json", dataReceived);```
 
-# JSONP to solve 
+VS
+
+```loadJSON("http://api.open-notify.org/astros.json", dataReceived);```
+
+# JSONP to solve cross-domain errors
 
 Sometimes when working with JSON APIs you can get the following error
 
@@ -31,7 +47,10 @@ XMLHttpRequest cannot load http://external-domain/service. No ‘Access-Control-
 * there are open APIs and those requiring authorization
 * start out by using APIs that have tutorials or sample code and consider trying out ones that don't require an API
 
-Example 5
+# Working with an API - the basics
+
+## An example - OpenWeatherMap
+
 * using the [OpenWeatherMap](https://openweathermap.org/api) API
 * Sign up and make a new account
 * Get your private API key
@@ -44,7 +63,7 @@ When working with APIs, they often have a specific way of constructing a URL to 
 
 Example
 
-```website.org/?city=London``` 
+```website.org/?city=London```
 
 Multiple query values
 
