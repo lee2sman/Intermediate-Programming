@@ -8,6 +8,11 @@ function setup(){
 
 function dataReceived(data){
     console.log("here is the data: ");
-    console.log(data);
+    
+   for (let i = 0; i < data.people.length; i++) {
+       
+    console.log(data.people[i].name);
+       
+   }
 
 }
