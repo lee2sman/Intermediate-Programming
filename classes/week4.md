@@ -84,3 +84,10 @@ You can put this URL in your browser to see this data.
 
 * You may want to use the JSON Formatter Chrome extension to format this data and make it easier to read.
 * Or use Code Beautify [JSON Viewer](https://codebeautify.org/jsonviewer)
+
+
+# Resources
+
+* [Blog post](https://shkspr.mobi/blog/2016/05/easy-apis-without-authentication/) with a few chosen easy-to-use open APIs
+* [List](https://gist.github.com/afeld/4952991) of source data APIs thata do not require authorization or credentials
+* [Public APIs](https://github.com/toddmotto/public-apis) - a large list
