@@ -32,17 +32,24 @@ Week 1
 * Working with data
 * Introduction to JSON format
 * Reading JSON
-* Queries/Getting data from APIs
-* Encoding URLs
 
 # Week 4
-* Presentation/First project due
+* [In-class notes](classes/week4.md)
+* Presentation of assignment 1
+* More work with JSON
+* Async loading
+* API keys/authentication
+* Getting around cross-domain problems with jsonp
+* Encoding URLS
+* example queries with OpenWeatherMap
+* Intro to data visualization using API data and JSON
+
+# Week 5
+* [In-class notes](classes/week5.md)
 * Intro to NodeJS
 * Runtime environment, library
 * Installing node, working with a server, working locally
 * NPM package manager
-
-# Week 5
 * More advanced work with NodeJS
 * Modularizing code, using require()
 * Built-in APIs for building web applications
