@@ -13,7 +13,7 @@
 # Running Node in the command line
 * After installing, you can launch node by typing ```node```
 * Enter javascript commands one at a time
-* Exit with ```.quit``` or *Control-D*
+* Exit with *Control-D*
 * You can edit node files (javascript files run with node) in any text editor
 * You can append the node shebang ```#!/usr/bin/env node``` in the first line of the file. Save the file with a ```.js``` suffix.
 * You can run your program in the Terminal with ```node filename.js```
