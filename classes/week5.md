@@ -1,5 +1,9 @@
 # Week 5
 
+# Javascript Classes
+* A review of Javascript classes in ES6
+* [Notes](intro-to-classes-in-ES6.md)
+
 # Intro to NodeJS
 * Node is a version of Javascript that works outside the browser. It can run on the command line and on servers
 * Node is used for writing backend applications without a browser, though it can be used to manage the server in addition to the software you write for a browser
