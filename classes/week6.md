@@ -10,7 +10,38 @@ Deploying bots locally (crontab/Linux) and to remote servers
 Mini Assignment: Creating a Twitter bot
 
 
-This is a non-comprehensive reading list I originally put together for students of my Intermediate Programming class at Woodbury University, Spring 2018. I consider it a work in progress and am open to suggestions for inclusion.
+# Overview of Bots
+
+# Making A Twitter Bot
+1. Create a twitter account
+2. Create an app in your developer page. You need to connect a phone number. You can get a free Google voice or Twilio number.
+3. Enter an app name, description, and website. Leave the “callback” field blank.
+4. Go to *Keys and Access Tokens* to get your *Consumer Key (API Key)* and *Consumer Secret (API Secret)*
+5. Click to *Generate Access Token* for your Access Token and Access Token Secret
+
+# Authenticate with Twit 
+1. ```
+npm install Twit --save
+var Twit = require('twit');
+```
+2. 
+```
+var T = new Twit({
+  consumer_key:         'YOURCONSUMERKEY',
+  consumer_secret:      'YOURCONSUMERSECRET',
+  access_token:         'YOURACCESSTOKEN',
+  access_token_secret:  'YOURACCESSTOKENSECRET'
+});
+```
+Alternatively, you can put this info privately in config.js file for example.
+3. Access this with ```require``` in your javascript file.
+
+```
+var config = require('./config.js');
+var T = new Twit(config);
+```
+
+# Reading List on Bots
 
 # Pre-History
 * [Eliza](https://en.wikipedia.org/wiki/ELIZA)
