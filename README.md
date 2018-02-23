@@ -56,6 +56,7 @@ Week 1
 * Express framework
 
 # Week 6
+* [In-class notes](classes/week6.md)
 * A broad overview of Bots and Assistants
 * Introduction to Chatbots, Twitter Bots
 * Examples of bots
