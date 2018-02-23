@@ -19,12 +19,17 @@ Mini Assignment: Creating a Twitter bot
 4. Go to *Keys and Access Tokens* to get your *Consumer Key (API Key)* and *Consumer Secret (API Secret)*
 5. Click to *Generate Access Token* for your Access Token and Access Token Secret
 
-# Authenticate with Twit 
-1. ```
+# Authenticate with Twit
+
+1.
+
+```
 npm install Twit --save
 var Twit = require('twit');
 ```
-2. 
+
+2.
+
 ```
 var T = new Twit({
   consumer_key:         'YOURCONSUMERKEY',
@@ -33,7 +38,9 @@ var T = new Twit({
   access_token_secret:  'YOURACCESSTOKENSECRET'
 });
 ```
+
 Alternatively, you can put this info privately in config.js file for example.
+
 3. Access this with ```require``` in your javascript file.
 
 ```
@@ -50,7 +57,7 @@ var T = new Twit(config);
 
 # Design Principles
 * [Designing A Chatbot's Personality](https://chatbotsmagazine.com/designing-a-chatbots-personality-52dcf1f4df7d) in *Chatbots Magazine*
-* [Designing Chatbot Personalities](https://www.fastcodesign.com/3054934/the-next-phase-of-ux-designing-chatbot-personalities) from FastCoDesign 
+* [Designing Chatbot Personalities](https://www.fastcodesign.com/3054934/the-next-phase-of-ux-designing-chatbot-personalities) from FastCoDesign
 * [What Chatbots Reveal About Our Own Shortcomings](https://www.nytimes.com/2016/04/24/magazine/what-chatbots-reveal-about-our-own-shortcomings.html)
 
 # Utopia/Dystopia
