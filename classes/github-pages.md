@@ -13,7 +13,7 @@ Make sure Initialize with a README is unchecked.
 
 4 In your project folder on your computer, you are working on a local copy. You will work on this local copy, saving like normal. When you get to a moment that you want to preserve all code in memory, then save like normal in your program. Go back to the Terminal. Add all changed files to be staged to be committed locally. ```git add filename``` You can add multiple files at once ```git add file1 file2 file3``` 
 
-5 Commit your files on your local repository, with a commit save message. ```git commit -m 'initial save of my files'
+5 Commit your files on your local repository, with a commit save message. ```git commit -m 'initial save of my files' ```
 
 6 You can push these saved commits to your remote version of your project repository on GitHub anytime. It's common practice to do this each time you commit. ```git push```
 
