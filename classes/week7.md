@@ -1,11 +1,11 @@
 # Requirements
 
-* [Nodejs] installed - Install via brew  on Mac ```brew install node``` or from [here](http://nodejs.org). This will also install NPM.
-* Create a new [Twitter](http://twitter.com) account
+* [Nodejs](http://nodejs.org) installed - Install via brew  on Mac ```brew install node``` or from [here](http://nodejs.org). This will also install NPM.
+* You will have to create a new [Twitter](http://twitter.com) account
 
 # Overview
 
-We will be writing our bot in Javascript, and can use the P5JS library as well. We will be using the Twit library and installing it via NPM, the Node Package Manager. Twit lets us tweet, stream and communicate with the Twitter API.
+We will be writing our bot in Javascript. We will be using the Twit library and installing it via NPM, the Node Package Manager. Twit lets us tweet, stream and communicate with the Twitter API.
 
 # Procedure
 
@@ -51,33 +51,7 @@ module.exports = {
 }
 ```
 
-## Setting up our Node.js Twitter Bot
-
-```
-npm install --save twit
-```
-
-Once complete, open up ```sketch.js```
-
-```
-var twit = require(’twit’);
-var config = require(’./config.js’);
-```
-
-This makes sure we are requiring the Twit dependency and our config.js file. Now let's use Twitter.
-
-```
-var Twitter = new twit(config);
-```
-
-
-
-
-## Usage
-
-To run our bot ```node sketch.js```
-
-
+# Setting up our Node.js Twitter Bot
 
 ## Install and Setup Twit
 
@@ -146,7 +120,17 @@ function tweeter() {
 }
 ```
 
+### More complex Starter Code
+[Here](https://github.com/lee2sman/intermediate-programming/blob/master/classes/week7_code/1basicbot/sketch.js)
+
+## Usage
+
+To run our bot ```node sketch.js```
+
+It will run and post every 5 minutes. To quit - Control-C.
+
+**Our next step is to deploy this to a remote server!**
 
 # Resources
 * The Twit module has its own [documentation](https://www.npmjs.com/package/twit) on its API and starter code
-
+* Darius Kazemi's [corpora](https://github.com/dariusk/corpora/) has TONS of lists of words
