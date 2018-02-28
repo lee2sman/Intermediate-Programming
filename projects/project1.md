@@ -25,3 +25,16 @@ Bonus points:
 
 # DUE
 * By the beginning of class on February 15
+
+# Students
+* [Ben](https://benjaminluker.github.io/Sandwiches_Galore_Repo/empty-example/index.html)
+* [Camille](https://camgerine.github.io/API-Assignment/)
+* [Jason](Https://jasonmetzner.github.io/empty-example/index.html)
+* [Joab](https://joabmartinez.github.io/ChuckNorrisApi/)
+* [Joseph](https://josephmedina96.github.io/Intermediate-Project-1/index.html)
+* [Kane](https://boyerk.github.io/API/ )
+* [Kyro](https://doxfog.github.io/API-Loading/JSON/index.html)
+* [Sungmin Lee](https://lsm0821.github.io/Prototype/index.html)
+* [Tom](https://gucheng0712.github.io/RandomUserGeneratorAPI/)
+* [Zane](https://zanezee.github.io/APIAssignmentTusman/)
+
