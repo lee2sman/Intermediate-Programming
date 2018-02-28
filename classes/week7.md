@@ -120,6 +120,9 @@ function tweeter() {
 }
 ```
 
+### More complex Starter Code
+[Here](https://github.com/lee2sman/intermediate-programming/blob/master/classes/week7_code/1basicbot/sketch.js)
+
 ## Usage
 
 To run our bot ```node sketch.js```
