@@ -68,6 +68,7 @@ Week 1
 * Mini Assignment: Creating a Twitter bot
 
 # Week 7
+* [In-class notes](classes/week7.md)
 * Studio time and feedback on Twitter Bots
 * In-class or stream interview with Bot creators
 * Voice command/assistance as a “verbal command line”
