@@ -15,13 +15,7 @@ We will be writing our bot in Javascript, and can use the P5JS library as well. 
 npm init //this will be used to configure our web app 
 ```
 
-Create a ```sketch.js``` file and ```config.js``` file in your project's directory. We will use our ```sketch.js``` file to write our Twitter bot. Open up and edit the main field in ```package.json```. ```. 
-
-```
-{
-	"main": "sketch.js",
-},
-```
+Create a ```sketch.js``` file and ```config.js``` file in your project's directory. We will use our ```sketch.js``` file to write our Twitter bot. Open up and edit the main field in ```package.json``` with whatevery your javascript file will be called. I call mine ```sketch.js```. There are lots of fields, but make sure your main is properly named. For example, ```"main": "sketch.js",```
 
 Our project folder should now contain:
 
@@ -35,7 +29,7 @@ project-folder
 ## Set up our new Twitter account
 
 1. Create a twitter account.
-2. Create an app in your developer page. You need to connect a phone number. You can get a free Google voice or Twilio number. [https://apps.twitter.com/app/new]
+2. Create an app in your developer page. You need to connect a phone number. You can get a free Google voice or Twilio number. [https://apps.twitter.com/app/new](here).
 3. Enter an app name, description, and website. Leave the “callback” field blank.
 4. Go to *Keys and Access Tokens* to get your *Consumer Key (API Key)* and *Consumer Secret (API Secret)*
 5. Click to *Generate Access Token* for your Access Token and Access Token Secret
@@ -90,7 +84,7 @@ To run our bot ```node sketch.js```
 1.
 
 ```
-npm install Twit --save
+npm install twit --save
 ```
 
 2. Let's hide our private keys/secrets/tokens in a file that we won't be posting so others can't snoop.
