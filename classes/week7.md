@@ -131,6 +131,10 @@ It will run and post every 5 minutes. To quit - Control-C.
 
 **Our next step is to deploy this to a remote server!**
 
+## Deploying our bot to a server
+
+* Tutorial [here](http://shiffman.net/a2z/bot-ec2/)
+
 # Resources
 * The Twit module has its own [documentation](https://www.npmjs.com/package/twit) on its API and starter code
 * Darius Kazemi's [corpora](https://github.com/dariusk/corpora/) has TONS of lists of words
