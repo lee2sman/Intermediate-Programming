@@ -136,5 +136,7 @@ It will run and post every 5 minutes. To quit - Control-C.
 * Tutorial [here](http://shiffman.net/a2z/bot-ec2/)
 
 # Resources
+* Very short: how to [respond](https://github.com/desmondmorris/node-twitter/issues/224) to a tweet. [More info](https://stackoverflow.com/questions/44669859/replying-to-a-tweet-using-twit-and-node-js)
 * The Twit module has its own [documentation](https://www.npmjs.com/package/twit) on its API and starter code
+* [Make a poster/follower bot](https://towardsdatascience.com/making-a-replier-and-follow-bot-for-twitter-using-node-js-23e0ba8e4e4f)
 * Darius Kazemi's [corpora](https://github.com/dariusk/corpora/) has TONS of lists of words
