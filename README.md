@@ -4,9 +4,9 @@ This course introduces advanced programming concepts through the construction of
 
 ## Info
 - Woodbury University - Intermediate Programming Spring 2018
-- Lee Tusman, Tuesdays, 4 - 6:30pm  
+- Lee Tusman, Tuesday && Thursday, 4 - 6:30pm  
 
-Week 1
+# Week 1
 * [In-class notes](classes/week1.md)
 * Class introduction, description of syllabus and projects required for course
 * Workflow fundamentals: IDEs - Brackets, SublimeText, Atom, Vim, Codepen, etc
