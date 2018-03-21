@@ -71,26 +71,36 @@ This course introduces advanced programming concepts through the construction of
 * [In-class notes](classes/week7.md)
 * Studio time and feedback on Twitter Bots
 * In-class or stream interview with Bot creators
-* Voice command/assistance as a “verbal command line”
-* Working with the Amazon Alexa Node package
-* Project: Creating a Alexa “Skill” application
 * Studio time for Alexa skill project
 * User testing
 * 1-on-1 meetings
 
 # Week 8
+* [In-class notes](classes/week8.md)
+* *no class Tuesday*
+* Student Presentation: Twitter Bots
+* Deployment to server
+* Amazon AWS / Lambda
+
+**Spring Break**
+
+# Week 9
+* [In-class notes](classes/week9.md)
+* Deploy to Amazon EC2
+* Public and Private Keys - [introduction video](https://www.youtube.com/watch?v=ZghMPWGXexs)
+* Voice command/assistance as a “verbal command line”
+* Working with the Amazon Alexa Node package
+* Project: Creating a Alexa “Skill” application
+* Open studio time to work on Alexa Skill
+
+# Week 10
 * Data persistence
 * Hosting and deploying web applications with Firebase
 * Authentication
 * Creating your own API with Node and Express
 * CORS
 * Express routes
-* Student Presentation: Twitter Bots
 
-# Week 9
-* Open studio time to work on Alexa Skill
-
-# Week 10
 * Student presentations on Alexa Skills
 * Overview of other Javascript libraries for graphic and games
 * P5Play or Phaser.JS for detecting collisions and working with game sprites
