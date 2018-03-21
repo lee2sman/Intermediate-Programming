@@ -36,7 +36,7 @@
 
 16. Open the Site Manager. Create a New site. Enter your host from Amazon's connect info. Choose Protocol SFTP. Logon type is Key file. User is ubuntu. Choose the Key file you saved on your computer previously. Then choose connect. If successful, your files on the server will load.
 
-17. You can now upload your files for your bot.
+17. You can now upload your files for your bot. Drag the files from your computer to the server folder. Drag over: sketch.js (or whatever your js file is called), config.js, and modules.json
 
 18. Go back to your Terminal where you're logged into your Ubuntu instance.
 
@@ -47,26 +47,27 @@
 
 ```
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get install nodejs-legacy
 sudo apt-get install npm
-sudo ln -s 'which nodejs' /usr/bin/node
 ```
 
-That last command ensures that your instance will run the correct nodejs package that you've installed.
+22. Check that everything is working. Type ``node``` and make sure it drops into node on the server. To get out of node, you'll type ```.exit``` or Control-C.
 
-22. Check that everything is working. Type ``node``` and make sure it drops into node on the server.
+23. Let's now install our needed node modules. ```npm install``` and it will find our needed modules on the server. It knows what modules to install based on your modules.json file you transferred over before.
 
-23. Let's now install our needed node modules. ```npm install``` and it will find our needed modules on the server.
+24. You should be able to run your code on the server now. ```node sketch.js``` Note that node-legacy does not like if you use ```let``` instead of ```var``` and will give you an error. If this happens to you force it to accept it. Open up your sketch.js or whatever you called your file. Add the line ```use strict;``` at the beginning of the file. Save and re-upload with Filezilla.
 
-24. Run it! ```node sketch.js```
-
-25. It works! Let's make it permanently run. ```sudo npm install forever -g```. This installs the tool *forever* globally so all node packages can use it. 
+25. Try it again on the server. ```node sketch.js``` If it works, let's make it permanently run. ```sudo npm install forever -g```. This installs the tool *forever* globally so all node packages can use it. 
 
 26. We can now run this *forever* with ```forever start sketch.js```
 
-27. To test what bots are running in the future if you login you can type ```forever list``` to see what's running on the instance.
+27. To test what bots are running in the future if you login you can type ```forever list``` to see what's running on the instance. Note that some students found that posting every five minutes causes Twitter to turn you off. I run my bots once an hour and haven't had an issue. To post once an hour, change this line to ```setInterval(tweeter, 3600000);``` so that it posts once every 3600000 milliseconds (aka 1 hour).
 
 28. If you want to stop your bots you can type ```forever stopall``` and restart with ```forever start```
+
+## Notes
+
+
 
 # Tutorial
 Video [tutorial](https://www.youtube.com/watch?v=26bajyD4fLg)
