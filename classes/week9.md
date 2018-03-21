@@ -51,7 +51,7 @@ sudo apt-get install nodejs-legacy
 sudo apt-get install npm
 ```
 
-22. Check that everything is working. Type ``node``` and make sure it drops into node on the server. To get out of node, you'll type ```.exit``` or Control-C.
+22. Check that everything is working. Type ```node``` and make sure it drops into node on the server. To get out of node, you'll type ```.exit``` or Control-C.
 
 23. Let's now install our needed node modules. ```npm install``` and it will find our needed modules on the server. It knows what modules to install based on your modules.json file you transferred over before.
 
