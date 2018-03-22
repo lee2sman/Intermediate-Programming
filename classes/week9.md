@@ -87,6 +87,7 @@ sudo apt-get install npm
 Video [tutorial](https://www.youtube.com/watch?v=26bajyD4fLg) by Dan Shiffman on deploying to EC2. 
 
 # Intro to Alexa Skills
+* [here](intro-to-alexa.md)
 
 # Homework
 
