@@ -5,17 +5,11 @@ Note: Chatbots: Principles, Methods, Ethics - a Noncomprehensive Reading List I'
 
 ## Overview
 * What is Alexa? Amazon marketing [video](https://www.youtube.com/watch?v=UOEIH2l9z7c)
-
-## Technical Overview
-* Alexa Skills Kit Developer Console: Overview [video](https://www.youtube.com/watch?v=6YwBxpZpRDo&feature=youtu.be)
-* Amazon Alexa Skills Kit - [Learn](https://developer.amazon.com/alexa-skills-kit/learn)
-* Alexa Gaming Skills [site](https://developer.amazon.com/alexa-skills-kit/gaming)
+* Echo simulated [online](https://echosim.io/)
 
 ## Language Definitions
 
 Programming --> Alexa
-
-### Definitions
 
 Alexa = Computer
 
@@ -30,6 +24,14 @@ slot = variable
 ## Tutorial
 
 We are going to use Amazon's [tutorial](https://github.com/alexa/skill-sample-nodejs-howto) on Building a How-To Skill
+
+[Tutorial page](https://developer.amazon.com/alexa-skills-kit/tutorials) for Amazon Alexa Skills Kit sample Skills
+
+
+## Technical Overview
+* Alexa Skills Kit Developer Console: Overview [video](https://www.youtube.com/watch?v=6YwBxpZpRDo&feature=youtu.be)
+* Amazon Alexa Skills Kit - [Learn](https://developer.amazon.com/alexa-skills-kit/learn)
+* Alexa Gaming Skills [site](https://developer.amazon.com/alexa-skills-kit/gaming)
 
 ## Homework
 
