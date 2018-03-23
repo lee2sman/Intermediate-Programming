@@ -148,9 +148,10 @@ We are going to use Amazon's [tutorial](https://github.com/alexa/skill-sample-no
 # Homework
 
 Plan your first Alexa skill. 
-	* What is the concept/purpose for the Skill?
-	* What is the invocation name?
-	* what are your intents (functions)?
-	* What are the utterances to trigger your intents?
+
+* What is the concept/purpose for the Skill?
+* What is the invocation name?
+* what are your intents (functions)?
+* What are the utterances to trigger your intents?
 
 
