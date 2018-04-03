@@ -1,5 +1,9 @@
 # Week 11
 
+# Review Alexa apps
+* Review student work
+* critique
+
 # Pre-requisites
 * NodeJS
 * NPM
@@ -34,3 +38,9 @@ Express is one of the most popular frameworks for Node. It acts as a web server,
 # Resources
 * HTTP Server With Express [tutorial](https://www.youtube.com/watch?v=6oiabY1xpBo&list=PLRqwX-V7Uu6Yyn-fBtGHfN0_xCtBwUkBp&index=2) by Dan Shiffman
 * Creating Routes [tutorial](https://www.youtube.com/watch?v=e4qKBkwwkNg&index=3&list=PLRqwX-V7Uu6Yyn-fBtGHfN0_xCtBwUkBp)
+
+## Homework
+* Review [Express](https://expressjs.com) framework
+* Read about [routing](https://expressjs.com/en/guide/routing.html)
+* Learn about ESLint through [video tutorial](https://www.youtube.com/watch?v=clzTwZgMlqE) by Dan Shiffman and/or through an article, [Why and How to use ESLint in your project](https://medium.com/the-node-js-collection/why-and-how-to-use-eslint-in-your-project-742d0bc61ed7) and set up a global ESLint for your needs! 
+* Another reference - [Setting up ESLint in Atom](https://hackernoon.com/what-is-eslint-how-do-i-set-it-up-on-atom-70f270f57296)
