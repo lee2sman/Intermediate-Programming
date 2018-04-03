@@ -94,27 +94,28 @@ This course introduces advanced programming concepts through the construction of
 * Open studio time to work on Alexa Skill
 
 # Week 10
+* [In-class notes](classes/week10.md)
+* More work with Amazon Alexa
+* Creating a Voice User Interface
+* Setting up Amazon Web Services - Lambda functions
+* Deploying
+* Testing
+
+# Week 11
 * Data persistence
-* Hosting and deploying web applications with Firebase
 * Authentication
+* Express routes
 * Creating your own API with Node and Express
 * CORS
-* Express routes
-
 * Student presentations on Alexa Skills
+
+# Week 12
+* Student presentations: Final project proposal
 * Overview of other Javascript libraries for graphic and games
 * P5Play or Phaser.JS for detecting collisions and working with game sprites
 * HammerJS for touch control
 * Three.JS for 3D graphics
 * Project: Creating a networked game or drawing program
-
-# Week 11
-* Learn Anything - guest lecture with Linked By Air
-* Overview of Python language
-* Working with Python server, deployment and frameworks
-
-# Week 12
-* Student presentations: Final project proposal
 
 # Week 13
 * Work in progress
