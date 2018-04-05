@@ -1,4 +1,5 @@
 # Languages
+
 C#
 Javascript
 HTML
@@ -13,8 +14,11 @@ Lua
 ActionScript 3
 Ruby
 Haskell
+Perl
+Swift
 
 # Frameworks/Libraries
+
 Processing (Java)
 JQuery (Library)
 P5JS (Javascript)
@@ -28,7 +32,13 @@ OpenGL
 TensorFlow
 Minecraft Command Blocks/Redstone
 
+# Data Format
+XML
+JSON
+YAML, HAML, TOML
+
 # IDE
+
 PyCharm
 XCode
 Brackets
@@ -39,6 +49,7 @@ Eclipse
 NetBeans
 
 # Tools
+
 Node (Javascript)
 Express (Javascript Node Package)
 Browserfy
@@ -46,11 +57,13 @@ Gulp
 Git
 
 # Programming Games
+
 Human Resource Machine (Assembly)
 TIS-100 (Assembly)
 Hack N Slash 
 
 # Esolang (Esoteric Languages)
+
 [COW](https://esolangs.org/wiki/COW)
 ...
 
