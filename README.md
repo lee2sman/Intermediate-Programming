@@ -102,6 +102,7 @@ This course introduces advanced programming concepts through the construction of
 * Testing
 
 # Week 11
+* [In-class notes](classes/week11.md)
 * Data persistence
 * Authentication
 * Express routes

@@ -35,12 +35,55 @@ Express is one of the most popular frameworks for Node. It acts as a web server,
 * Using Express, we can serve a *route*. By typing in a url such as *website.com/search/sriracha*, this route *search/sriracha* gets interpreted by our server through its API to search for our object and then send back particular data.
 * When a user makes a request, we send back a response
 
+Routing is particularly useful for executing specific code based on the user's specific route.
+
+```
+app.get('/this_route', specialFunction);
+```
+
+By adding this to our code, we trigger a function as a callback to run when a user hits our domain at *this_route*.
+
+Our created function looks like:
+
+```
+function specialFunction(request, response) {
+  response.send("Running our special function.");
+}
+```
+
+We pass the parameters *request* and *response*, which references **http**'s *request-response protocol*. You can also pass html, either inside the send request, or more conveniently, as a passed variable containing your html.
+
+```
+function specialFunction(request, response) {
+  let message = '<h1>Headline</h1><p>Some information on this topic.</p>';
+  response.send(message);
+}
+```
+
 # Resources
 * HTTP Server With Express [tutorial](https://www.youtube.com/watch?v=6oiabY1xpBo&list=PLRqwX-V7Uu6Yyn-fBtGHfN0_xCtBwUkBp&index=2) by Dan Shiffman
 * Creating Routes [tutorial](https://www.youtube.com/watch?v=e4qKBkwwkNg&index=3&list=PLRqwX-V7Uu6Yyn-fBtGHfN0_xCtBwUkBp)
 
-## Homework
+## Tuesday Homework
 * Review [Express](https://expressjs.com) framework
 * Read about [routing](https://expressjs.com/en/guide/routing.html)
 * Learn about ESLint through [video tutorial](https://www.youtube.com/watch?v=clzTwZgMlqE) by Dan Shiffman and/or through an article, [Why and How to use ESLint in your project](https://medium.com/the-node-js-collection/why-and-how-to-use-eslint-in-your-project-742d0bc61ed7) and set up a global ESLint for your needs! 
 * Another reference - [Setting up ESLint in Atom](https://hackernoon.com/what-is-eslint-how-do-i-set-it-up-on-atom-70f270f57296)
+
+## Thursday Homework
+
+* Watch [What Is Firebase?](https://www.youtube.com/watch?list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT&v=JrHT1iqSrAQ) and [Firebase: Saving Data](https://www.youtube.com/watch?v=7lEU1UEw3YI&index=2&list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT)
+* Watch [Save P5JS Drawings to Firebase](https://www.youtube.com/watch?v=RUSvMxxm_Jo&list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT&index=4)
+* Create your own Cheat Sheet for a language we have not covered in class
+* Consider
+	* Variables
+		* Types
+	* Functions
+	* Classes
+	* Operators
+	* Lists, Arrays
+	* Importing
+	* Control, Program flow
+	* Hello World
+	* Special properties of the language
+	* 
