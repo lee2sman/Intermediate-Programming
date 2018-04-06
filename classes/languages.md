@@ -2,8 +2,6 @@
  
 * C#
 * Javascript
-* HTML
-* CSS
 * Python - Mohammed
 * Java - Edi
 * C++ - Joab
@@ -18,6 +16,7 @@
 * Swift - J
 * BASIC
 * PHP
+* HTML, CSS, Javascript and their interaction through the DOM - Matthew
  
 # Frameworks/Libraries
  
