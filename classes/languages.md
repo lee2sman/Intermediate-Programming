@@ -16,6 +16,7 @@
 * Haskell
 * Perl
 * Swift
+* BASIC
  
 # Frameworks/Libraries
  
