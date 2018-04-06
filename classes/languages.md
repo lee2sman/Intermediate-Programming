@@ -4,19 +4,20 @@
 * Javascript
 * HTML
 * CSS
-* Python
-* Java
-* C++
+* Python - Mohammed
+* Java - Edi
+* C++ - Joab
 * Scratch
 * Bash
-* GML (Game Maker Language)
-* Lua
-* ActionScript 3
-* Ruby
+* GML (Game Maker Language) - Camille
+* Lua - Zane
+* ActionScript 3 - Ben
+* Ruby - Brian/Atlas
 * Haskell
 * Perl
-* Swift
+* Swift - J
 * BASIC
+* PHP
  
 # Frameworks/Libraries
  
@@ -31,12 +32,12 @@
 * CANVAS
 * OpenGL
 * TensorFlow
-* Minecraft Command Blocks/Redstone
+* Minecraft Command Blocks/Redstone - Joseph
  
 # Data Format
 * XML
 * JSON
-* YAML, HAML, TOML
+* YAML, HAML, TOML - Sungmin Lee
  
 # IDE
  
@@ -45,7 +46,7 @@
 * Brackets
 * Atom
 * Android Studio
-* Vim/Neovim or Emacs
+* Vim/Neovim - Kane
 * Eclipse
 * NetBeans
  
@@ -55,7 +56,9 @@
 * Express (Javascript Node Package)
 * Browserfy
 * Gulp
-* Git
+* Git - Tom
+* Django (Python)
+* Jekyll - Sungmin Lee
  
 # Programming Games
  
@@ -72,3 +75,6 @@
 * Homebrew (Mac)
 * NPM (node)
 
+# Markdown Languages
+
+* GitHub Flavored Markdown - Tom
