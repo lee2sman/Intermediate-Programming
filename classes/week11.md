@@ -75,7 +75,11 @@ function specialFunction(request, response) {
 * Watch [What Is Firebase?](https://www.youtube.com/watch?list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT&v=JrHT1iqSrAQ) and [Firebase: Saving Data](https://www.youtube.com/watch?v=7lEU1UEw3YI&index=2&list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT)
 * Watch [Save P5JS Drawings to Firebase](https://www.youtube.com/watch?v=RUSvMxxm_Jo&list=PLRqwX-V7Uu6agS82Le9lLCBbeaW8inATT&index=4)
 * Create your own Cheat Sheet for a language we have not covered in class
-* Consider
+* [language selection sheet](languages.md)
+
+## Cheat Sheet Components
+
+### FOR LANGUAGES
 	* Variables
 		* Types
 	* Functions
@@ -84,6 +88,17 @@ function specialFunction(request, response) {
 	* Lists, Arrays
 	* Importing
 	* Control, Program flow
+		* loops, if/else, main, while, etc
 	* Hello World
 	* Special properties of the language
-	* 
+
+### Framework/Library/Tool cheat sheet/getting started
+
+1. What does it do? Why use it?
+2. How to install?
+3. Getting Started/Quickstart
+4. Main functions
+5. Example code/programs
+6. Additional notes
+
+
