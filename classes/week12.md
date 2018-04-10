@@ -18,8 +18,8 @@
 * [Scratch](https://drive.google.com/file/d/1PsHW2ha8fXZ84YuxtD4f9zauAKXceugA/view?ts=5acd45ba) by Ben
 * [Python](https://drive.google.com/file/d/140C17_mDMFuQr_VztDu6gWq7ojiOIZu4/view?ts=5acd45ae) by Mohammed 
 * [Lisp](https://gist.github.com/JasonMetzner/faa12fe2201d2d11113142b079010be7) by Jay
-* [Kane](https://gist.github.com/boyerk/8718ddbad8a6872b61aa7623dae234d9)
-* [Matthew](https://github.com/gonzalezm6/Cheat-Sheet)
+* [Vim](https://gist.github.com/boyerk/8718ddbad8a6872b61aa7623dae234d9) by Kane
+* [HTML/CSS/Javascript and the DOM](https://github.com/gonzalezm6/Cheat-Sheet) by Matthew
 
 # Homework
 * Fix your cheatsheet, add an intro
