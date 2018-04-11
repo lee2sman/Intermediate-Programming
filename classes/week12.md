@@ -26,6 +26,7 @@
 
 # Homework
 * Fix your cheatsheet, add an intro
+	* How to get the language
 	* FORMAT it for web. Place it on GitHub as a markdown file.
 	* What is the language?
 	* What is it used for? (and/or why use it?)
