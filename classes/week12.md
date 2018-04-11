@@ -7,6 +7,9 @@
 * What is a library?
 * What is a tool?
 
+# Markdown
+* [markdown cheatsheet](markdown-cheatsheet.md)
+
 # Tutorials
 * [Lua](https://zanezee.github.io/Basic-HTML-Website/) by Zane
 * [Ruby](https://docs.google.com/document/d/1KOgrH8OfeDhBVKYZaIVWz1lmouKCvC3TIzV4DCsY9cs/edit?usp=sharing) by Brian/Atlas
