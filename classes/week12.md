@@ -33,5 +33,6 @@
 	* An intro to the language
 	* The cheatsheet
 	* A Hello World or basic example
+* Check out [Somebody](http://somebodyapp.com/) app and watch the intro video
 * Watch Chrome extensions [Tutorial video](https://www.youtube.com/watch?v=hkOTAmmuv_4) by Dan Shiffman
 
