@@ -6,6 +6,7 @@
 * Intro to [C++](https://github.com/JoabMartinez/Cheat-Sheet/blob/master/C%2B%2B%20Cheat%20Sheet.md) by Joab
 * Intro to [Lua](https://github.com/ZaneZee/Basic-HTML-Website/blob/master/mark-down-example.md) and [cheatsheet](https://zanezee.github.io/Lua-Cheat-Sheet.md) by Zane
 * Intro to [Java](https://github.com/gusflame/intermediatepro/blob/master/javacheatsheet.md) by Edi
+* Intro to [Python](https://github.com/alhasan67/Python/blob/master/Python%20Cheatsheet.md)
 
 # Web and the DOM
 * Intro to [HTML](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/html.md) and [example](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/Index.html) by Matthew
