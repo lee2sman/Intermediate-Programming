@@ -3,8 +3,9 @@
 # Languages
 * Intro to [Markdown](https://github.com/gucheng0712/CheatSheet/blob/master/MarkDown-CheatSheet.md) by Tom
 * Intro to [ActionScript](https://github.com/BenjaminLuker/ActionScript3.0-Cheatsheet)! by Ben
-* Intro to [C++](https://github.com/JoabMartinez/Cheat-Sheet/blob/master/C%2B%2B%20Cheat%20Sheet.md)
+* Intro to [C++](https://github.com/JoabMartinez/Cheat-Sheet/blob/master/C%2B%2B%20Cheat%20Sheet.md) by Joab
 * Intro to [Lua](https://github.com/ZaneZee/Basic-HTML-Website/blob/master/mark-down-example.md) and [cheatsheet](https://zanezee.github.io/Lua-Cheat-Sheet.md)
+* Intro to [Java](https://www.youtube.com/watch?v=EMFscTOazS0) by Edi
 
 # Web and the DOM
 * Intro to [HTML](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/html.md) and [example](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/Index.html) by Matthew
