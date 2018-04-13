@@ -14,7 +14,7 @@
 
 
 # Tools
-* Intro to [Vim](https://gist.github.com/boyerk/8718ddbad8a6872b61aa7623dae234d9) by Kane 
+* Intro to [Vim](https://github.com/boyerk/Cheatsheet/blob/master/Cheat%20Sheet.md) by Kane
 * Intro to [GitHub](https://github.com/gucheng0712/CheatSheet/blob/master/GitHub-CheatSheet.md) by Tom
 
 # Frameworks
