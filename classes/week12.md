@@ -10,7 +10,14 @@
 # Markdown
 * [markdown cheatsheet](markdown-cheatsheet.md)
 
-# Tutorials
+# Tutorials v2! 
+
+* [here](coding_intros.md)
+
+## Tutorials v1
+
+Round 1 tutorials!
+
 * [Lua](https://zanezee.github.io/Basic-HTML-Website/) by Zane
 * [Ruby](https://docs.google.com/document/d/1KOgrH8OfeDhBVKYZaIVWz1lmouKCvC3TIzV4DCsY9cs/edit?usp=sharing) by Brian/Atlas
 * [Jekyll](https://docs.google.com/document/d/1j-P71a0Vt53ZZ2YRnZjnz9QMbA1I7WrXZocVfJoY-_k/edit?usp=sharing) by Sungmin Lee
@@ -22,11 +29,12 @@
 * [Python](https://drive.google.com/file/d/140C17_mDMFuQr_VztDu6gWq7ojiOIZu4/view?ts=5acd45ae) by Mohammed 
 * [Lisp](https://gist.github.com/JasonMetzner/faa12fe2201d2d11113142b079010be7) by Jay
 * [Vim](https://gist.github.com/boyerk/8718ddbad8a6872b61aa7623dae234d9) by Kane
-* [HTML/CSS/Javascript and the DOM](https://github.com/gonzalezm6/Cheat-Sheet) by Matthew
+* [HTML/CSS/JS and the DOM](https://github.com/gonzalezm6/Cheat-Sheet) by Matthew
+* **** by Camille
 
 # Homework
 * Fix your cheatsheet, add an intro
-	* How to get the language
+	* How to get the language?
 	* FORMAT it for web. Place it on GitHub as a markdown file.
 	* What is the language?
 	* What is it used for? (and/or why use it?)
