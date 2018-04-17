@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>HTML/CSS/JS and the DOM  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    09 January 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">HTML/CSS/JS and the DOM</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/html.png" alt="html page" /></p>
+
+<h2 id="html-css-javascript-environment-and-the-dom">HTML/CSS/Javascript environment and the DOM</h2>
+
+<h3 id="html">HTML</h3>
+
+<ul>
+<li>HTML - Hypertext Markup Language
+
+<ul>
+<li>aka <em>The content</em></li>
+<li>Hypertext - directional <em>hyper</em> links. Words are associated with another file. By clicking on the link you jump to the other file.</li>
+<li>Markup - language used to describe formatting and placement. Other markup languages include <a href="https://en.wikipedia.org/wiki/Wiki#Editing">Wikimarkup</a></li>
+<li>Language - self-explanatory!</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML reference</a></li>
+</ul></li>
+</ul>
+
+<h3 id="css">CSS</h3>
+
+<ul>
+<li>CSS - Cascading Style Sheets
+
+<ul>
+<li>aka <em>The Style</em></li>
+<li>Where HTML is said to be your <em>content</em>, your CSS describes its <em>style</em>. CSS is used to describe colors, placement, fonts, size of objects, and more.</li>
+<li>CSS has a specific format. Each part of your website from the largest to smallest detail is an <em>element</em>. With CSS, you specify what elements on your website you want to modify, then give rules for how to style those elements.</li>
+<li>You specify placement on the page with CSS. Although one <em>could</em> specify exact placement (like specifying x,y position exactly), you must keep in mind the wide variety of screen sizes from phone to desktop browser size. Therefore, spend some time learning various approaches to positioning.</li>
+<li>CSS <a href="http://cssreference.io/">reference</a></li>
+<li>Inline Block <a href="http://dustwell.com/div-span-inline-block.html">tutorial</a></li>
+<li>CSS position <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">tutorial</a></li>
+</ul></li>
+</ul>
+
+<h3 id="javascript">Javascript</h3>
+
+<ul>
+<li>For <em>Interaction</em>, events and more</li>
+<li>Javascript was created by Brendan Eich in 1995 over a rapid time period for Netscape/Mozilla in order to compete with other web browsers (Internet Explorer) that were developing competing language for interactive content.</li>
+<li>Javascript as a name was selected because the Java language was popular at the time. They are not really related.</li>
+<li>Over time Javascript was adopted by all browsers though each browser/engine may have its own implementation. Standards for JavaScript are maintained by an international committee and codified as EcmaScript.</li>
+<li>Javascript is a multiparadigm language, meaning there are many approaches to coding with it.</li>
+<li>Javascript is <em>weakly</em> typed, meaning that the language does not have built in safety checks for memory and variable types</li>
+<li>Javascript as a language has evolved signficantly over time. New language features have been implemented and adopted at varying times by different browsers. Ecmascript2015 aka ES6 brought significant changes to syntax for classes, types, functions and loops, among other changes.</li>
+<li>Javascript includes support for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM</li>
+</ul>
+
+<h1 id="intro-to-html-and-css-from-p5js">Intro to HTML and CSS from P5JS</h1>
+
+<p><a href="https://github.com/processing/p5.js/wiki/Intro-to-HTML-and-CSS">Notes</a> on HTML and CSS coming from a background in P5JS/Processing</p>
+
+<h1 id="structure">Structure</h1>
+
+<h2 id="working-with-the-dom">Working with the DOM</h2>
+
+<ul>
+<li>DOM stands for The Document Object Model. Imagine your webpage is a tree structure where each element is a node on that tree representing a part of the document</li>
+<li>Web browsers use an internal DOM model in this tree structure with the topmost node named as &ldquo;Document object&rdquo;. When an HTML page is rendered in browsers, the browser downloads the HTML into local memory and automatically parses it to display the page on screen.</li>
+<li>The DOM acts as an interface between your webpage and Javascript</li>
+<li>JavaScript can add, change, and remove all of the HTML elements and attributes in the page.</li>
+<li>JavaScript can change all of the CSS styles in the page</li>
+<li>JavaScript can react to all of the existing events in the page</li>
+<li>JavaScript can create new events within the page</li>
+<li>There are libraries that make it easier to work with the DOM. These include jQuery as well as P5DOM that works with the P5JS library</li>
+<li><a href="https://github.com/processing/p5.js/wiki/Intro-to-DOM-manipulation-and-events">Intro</a> to DOM manipulation and events with P5JS</li>
+<li><a href="https://github.com/processing/p5.js/wiki/Beyond-the-canvas">Info</a> on working with the Dom in P5JS with the P5Dom library</li>
+<li><a href="https://github.com/processing/p5.js/wiki/Beyond-the-canvas#element-specific-listeners">Event Listeners</a> with P5Dom</li>
+<li>Working with <a href="https://www.smashingmagazine.com/2013/11/an-introduction-to-dom-events/">DOM events in Javascript</a> without libraries using Javascript event listeners</li>
+<li><a href="https://javascriptforwp.com/intro-to-events/">Video tutoral</a> on Events in the DOM with JavaScript</li>
+</ul>
+
+<h1 id="warm-up-project-ideas">Warm-up Project ideas</h1>
+
+<ul>
+<li>Building a Text Editor in the browser - <a href="https://gist.github.com/lee2sman/0c3fe0e05ed6f340102a6899ea04221e">starter code</a></li>
+<li>You can build a basic text editor, styling your text (color, size, etc) with CSS</li>
+</ul>
+
+<h1 id="additional-javascript-resources">Additional Javascript Resources</h1>
+
+<ul>
+<li><a href="https://www.w3schools.com/js/js_htmldom.asp">Javascript HTML DOM</a> tutorial on W3Schools</li>
+<li><a href="https://www.w3schools.com/jquery/">Jquery</a> tutorial on W3Schools</li>
+<li><a href="http://www.codecademy.com/tracks/javascript">CodeAcademy: JavaScript</a></li>
+<li><a href="http://javascriptissexy.com/how-to-learn-javascript-properly/">How to learn JavaScript properly</a></li>
+<li><a href="http://www.jstherightway.org/">JavaScript the right way</a></li>
+<li><a href="https://www.codeschool.com/paths/javascript">Code School</a></li>
+<li><a href="http://bonsaiden.github.io/JavaScript-Garden/">JavaScript garden</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to JS by Mozilla</a></li>
+<li><a href="https://learn.jquery.com/javascript-101/">JavaScript 101 from JQuery</a></li>
+</ul>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/google-fonts/" id="next">
+                &larr; <span class="nav-title nav-title-next">Working With Google Fonts</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/editors-and-ides/" id="prev">
+                 <span class="nav-title nav-title-prev">Editors and IDEs</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

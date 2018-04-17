@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>V on Intermediate Programming @Woodbury</title>
+    <link>http://leetusman.com/intermediate-programming/categories/v/</link>
+    <description>Recent content in V on Intermediate Programming @Woodbury</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://leetusman.com/intermediate-programming/categories/v/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create your own API with Express</title>
+      <link>http://leetusman.com/intermediate-programming/posts/create-your-own-api-with-express/</link>
+      <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/create-your-own-api-with-express/</guid>
+      <description>Pre-requisites  NodeJS NPM  Express Writing your own webserver Express is one of the most popular frameworks for Node. It acts as a web server, querying input, directing routing for mobile and web applications. You can use it to create your own API, aka your own interface between programs.
+ Start by creating a directory for your project mkdir project-title and enter that folder cd project-title Use npm init which will trigger a guide, asking you some questions, and generating a basic package.</description>
+    </item>
+    
+    <item>
+      <title>Coding an Alexa Skill</title>
+      <link>http://leetusman.com/intermediate-programming/posts/coding-alexa-skill/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/coding-alexa-skill/</guid>
+      <description> Procedure  Create a Voice User Interface (VUI) Create a Lambda AWS Function Connect the 2 together Test it Modify the code  Terminology  activation word = app name utterances = function calls intents = functions slots = variables  Tutorials  Quiz skill Facts skill HowTo skill  Homework  Follow the Alexa Skills Kit tutorial to get a basic Quiz, Fact or How-To Skill working  </description>
+    </item>
+    
+    <item>
+      <title>Intro to Alexa</title>
+      <link>http://leetusman.com/intermediate-programming/posts/intro-to-alexa/</link>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/intro-to-alexa/</guid>
+      <description>Creating an Alexa Skill with NodeJS Overview  What is Alexa? Amazon marketing video Echo simulated online  Language Definitions Programming &amp;ndash;&amp;gt; Alexa
+Alexa = Computer
+Skill = App
+Intent = Function
+Utterance = call a function
+slot = variable
+Tutorial We are going to use Amazon&amp;rsquo;s tutorial on Building a How-To Skill
+Tutorial page for Amazon Alexa Skills Kit sample Skills
+Technical Overview  Alexa Skills Kit Developer Console: Overview  Amazon Alexa Skills Kit - Learn Alexa Gaming Skills site  Consider  Brainstorm your Alexa how-to skill Concept  What are you teaching?</description>
+    </item>
+    
+    <item>
+      <title>A dozen language tutorials</title>
+      <link>http://leetusman.com/intermediate-programming/posts/intro-to-languages/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/intro-to-languages/</guid>
+      <description> Coding Intro Tutorials Languages  Intro to Markdown by Tom Intro to ActionScript! by Ben Intro to C++ by Joab Intro to Lua and cheatsheet by Zane Intro to Java by Edi Intro to Python by Mohammed  Web and the DOM  Intro to HTML and example by Matthew Intro to CSS and example by Matthew Intro to JS and example p5js sketch by Matthew  Tools  Intro to Vim by Kane Intro to GitHub by Tom  Frameworks  Minecraft Redstone and Command blocks by Joseph  </description>
+    </item>
+    
+    <item>
+      <title>Classes and Objects in Javascript ES6</title>
+      <link>http://leetusman.com/intermediate-programming/posts/classes-and-objects/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/classes-and-objects/</guid>
+      <description>What is a class? What is an object? In a programming language, a class is a defined code template that is used to create objects. Objects can have default instance variables and methods (functions). We say that classes encapsulate objects.
+ They store functions and variables together A class is a template - a cookie-cutter They are used to stamp out individual Objects When we stamp out or create an object using the Class/cookie cutter we are said to be instantiating an object.</description>
+    </item>
+    
+    <item>
+      <title>Linux on Windows 10</title>
+      <link>http://leetusman.com/intermediate-programming/posts/linux-on-windows/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/linux-on-windows/</guid>
+      <description>There are various approaches to running a Linux shell on a Windows computer. One option is to Dual Boot your computer so that there are multiple operating systems. Another option is to use a container or Virtual Machine to boot a containerized Linux operating system on your Windows Machine.
+The newest (as of 2016) option is to actually install a Linux subsystem on your Windows machine.
+Install Linux subsystem  Open Windows Powershell as Administrator Run Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux When complete, hit Return to restart computer and finish install.</description>
+    </item>
+    
+    <item>
+      <title>Botmaking - Deploying to Amazon</title>
+      <link>http://leetusman.com/intermediate-programming/posts/deploying-bots-to-amazon/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/deploying-bots-to-amazon/</guid>
+      <description>This week we are reviewing our Twitter bots and deploying them to Amazon AWS.
+Critique of the bots  Our class bots can be found here The list of bots is here  Deploying to Amazon - Choosing Web Services Amazon&amp;rsquo;s web store relies on a huge server infrastructure. Beginning in 2006 they launched a subsidiary company Amazon Web Services to provide on-demand cloud computing (servers).
+Amazon Web Services run on server farms.</description>
+    </item>
+    
+    <item>
+      <title>Create a Twitter Bot</title>
+      <link>http://leetusman.com/intermediate-programming/posts/botmaking-create-a-twitter-bot/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/botmaking-create-a-twitter-bot/</guid>
+      <description>Making A Twitter Bot  Create a twitter account Create an app in your developer page. You need to connect a phone number. You can get a free Google voice or Twilio number. Enter an app name, description, and website. Leave the “callback” field blank. Go to Keys and Access Tokens to get your Consumer Key (API Key) and Consumer Secret (API Secret) Click to Generate Access Token for your Access Token and Access Token Secret  Authenticate with Twit 1.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Botmaking - Reading List</title>
+      <link>http://leetusman.com/intermediate-programming/posts/botmaking-reading-list/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/botmaking-reading-list/</guid>
+      <description>Overview of Bots Reading List on Bots Pre-History  Eliza  
+Design Principles  Designing A Chatbot&amp;rsquo;s Personality in Chatbots Magazine Designing Chatbot Personalities from FastCoDesign What Chatbots Reveal About Our Own Shortcomings  Utopia/Dystopia  Move Over Chatbots, Here Come The Artbots Microsoft deletes &amp;lsquo;teen girl&amp;rsquo; AI after it became a Hitler-loving sex robot within 24 hours From Russia, with Love, links to PDF Video of BINA48 and info Speak Memory - a chatbot with the dead How Russian Bots Invade Our Elections video  Bot Ethics  Hard Questions About Bot Ethics When Chatbots Lack Diversity, This is What Happens Why Do So Many Digital Assistants Have Feminine Names BIGOTED BOTS: RACIAL AND GENDER BIAS IN ARTIFICIAL INTELLIGENCE IBM&amp;rdquo;s Code of ethics for AI and Chatbots that every brand should follow  Tools and Techniques  Cheap Bots Done Quick EstherBot: My Resume, as a Bot Building a Conversational Bot with Javascript and Node Handy-bots starter code projects on Glitch.</description>
+    </item>
+    
+    <item>
+      <title>Intro to NodeJS</title>
+      <link>http://leetusman.com/intermediate-programming/posts/intro-to-node/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/intro-to-node/</guid>
+      <description>Intro to NodeJS  NodeJS (aka Node) is a version of Javascript that works outside the browser. It can run on the command line and on servers. Node was originally used for writing backend applications without a browser, though it can be used to manage the server in addition to the software you write for a browser Download Node or on Mac brew install node  Differences from P5JS  P5 has a preload, setup and draw loop Node has no draw loop.</description>
+    </item>
+    
+    <item>
+      <title>Working with APIs</title>
+      <link>http://leetusman.com/intermediate-programming/posts/working-with-apis/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/working-with-apis/</guid>
+      <description>We know how to access, parse and modify JSON data. Now we&amp;rsquo;ll look at how we can use functions and API calls to access JSON data on the web.
+Callbacks  used in asynchronous programming when data is finally loaded, THEN call (run) another function  example
+loadJSON(&amp;quot;data.json&amp;quot;, dataReceived); function dataReceived(){ //once data has been loaded, the callback code in here will run }  Accessing JSON locally and via URLs loadJSON(&amp;quot;astros.</description>
+    </item>
+    
+    <item>
+      <title>Working with JSON Data</title>
+      <link>http://leetusman.com/intermediate-programming/posts/working-with-data-json/</link>
+      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/working-with-data-json/</guid>
+      <description>Data formats Data can be saved in many kinds of formats.
+ CSV - comma separated values XML - an older standard JSON - Javascript Object Notation text file - each line of the file containing a different data point a web page  JSON JSON is a good standard way of working with data files and is based on how Javascript literal objects are defined.
+JSON Type Examples Basic Example let car = { name: &#39;Saab&#39;, color: &#39;red&#39; year: 2016 }  JSON String { &amp;quot;name&amp;quot;:&amp;quot;Ricardo&amp;quot; }  JSON Number { &amp;quot;age&amp;quot;:77 }  JSON Object { &amp;quot;person&amp;quot;:{ &amp;quot;name&amp;quot;:&amp;quot;Shankar Patel&amp;quot;, &amp;quot;age&amp;quot;:40, &amp;quot;city&amp;quot;:&amp;quot;Los Angeles&amp;quot; } }  Accessing JSON with Dot Notation character = { &amp;quot;name&amp;quot;:&amp;quot;Shredder&amp;quot;, &amp;quot;age&amp;quot;:30, &amp;quot;home&amp;quot;:&amp;quot;TerrorDome&amp;quot; }; enemy = character.</description>
+    </item>
+    
+    <item>
+      <title>Javascript, A Reintroduction</title>
+      <link>http://leetusman.com/intermediate-programming/posts/javascript-reintroduction/</link>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/javascript-reintroduction/</guid>
+      <description>Javascript, A Reintroduction  We won&amp;rsquo;t be starting from the ground floor with Javascript. For introductory tutorials, check out:  W3Schools tutorials on Javascript Eloquent Javascript   Where to use Javascript  In the console Between &amp;lt;script&amp;gt; and &amp;lt;/script&amp;gt; in your HTML page In an external file called by &amp;lt;script src=&amp;quot;myfile.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; on your HTML page And in the commandline/Terminal using NodeJs  Javascript Output JavaScript can &amp;ldquo;display&amp;rdquo; data in different ways:</description>
+    </item>
+    
+    <item>
+      <title>A GitHub pages workflow</title>
+      <link>http://leetusman.com/intermediate-programming/posts/github-pages-workflow/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/github-pages-workflow/</guid>
+      <description>Standard GitHub and GitHub Pages Workflow We use Git to track files locally, and GitHub to store our code remotely and to collaborate with others. GitHub can also be used to host a website with GitHub Pages.
+Creating a New GitHub repository and pushing your local code to the remote repository  Make a new public repository on GitHub (or select one you are already working on). Select GitHub.com &amp;gt; + &amp;gt; New Repository.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Git and GitHub</title>
+      <link>http://leetusman.com/intermediate-programming/posts/intro-to-git-and-github/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/intro-to-git-and-github/</guid>
+      <description>What is Version Control? Version Control is the practice of saving copies or snapshots of your code at each significant stage as you work on a project. Like a meta-undo, version control lets you move forward and backward in time to get to different versions of your code across a project&amp;rsquo;s files. Without version control software, you might take a DIY approach by copying a project&amp;rsquo;s entire directory and naming it with the date.</description>
+    </item>
+    
+    <item>
+      <title>Working With the Command Line</title>
+      <link>http://leetusman.com/intermediate-programming/posts/intro-to-command-line/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/intro-to-command-line/</guid>
+      <description>Running Your Computer From the Command Line What is the command line? The command-line interface, sometimes referred to as the CLI, is a tool into which you can type text commands to perform specific tasks—in contrast to the mouse&amp;rsquo;s pointing and clicking on menus and buttons. Since you can directly control the computer by typing, many tasks can be performed more quickly, and some tasks can be automated with special commands that loop through and perform the same action on many files—saving you, potentially, loads of time in the process.</description>
+    </item>
+    
+    <item>
+      <title>Working With Google Fonts</title>
+      <link>http://leetusman.com/intermediate-programming/posts/google-fonts/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/google-fonts/</guid>
+      <description>Working with Google Fonts  Go to http://fonts.google.com Click the + next to the font you want In the tab at the bottom, grab the link for the font&amp;rsquo;s stylesheet and place inside your HTML page&amp;rsquo;s  section. Example: &amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; Add the link to your own stylesheet after the google font stylesheet. Example: &amp;lt;link href=&amp;quot;mystyle.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt; Grab the CSS code from the tab and implement it on your own stylesheet.</description>
+    </item>
+    
+    <item>
+      <title>HTML/CSS/JS and the DOM</title>
+      <link>http://leetusman.com/intermediate-programming/posts/html-css-js-dom/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/html-css-js-dom/</guid>
+      <description>HTML/CSS/Javascript environment and the DOM HTML  HTML - Hypertext Markup Language  aka The content Hypertext - directional hyper links. Words are associated with another file. By clicking on the link you jump to the other file. Markup - language used to describe formatting and placement. Other markup languages include Wikimarkup Language - self-explanatory! HTML reference   CSS  CSS - Cascading Style Sheets  aka The Style Where HTML is said to be your content, your CSS describes its style.</description>
+    </item>
+    
+    <item>
+      <title>Editors and IDEs</title>
+      <link>http://leetusman.com/intermediate-programming/posts/editors-and-ides/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/editors-and-ides/</guid>
+      <description>Editors and IDEs  A text editor is software to write and modify plain text files. They are used to write code. As opposed to word processing software they do not normally allow formatting.
+ An IDE is an integrated development environment, software that provides a number of tools in combination with a text editor and usually a compiler. There are a number of free and open source IDEs available.</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>http://leetusman.com/intermediate-programming/posts/hello-world/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://leetusman.com/intermediate-programming/posts/hello-world/</guid>
+      <description>Hello And welcome to Woodbury University&amp;rsquo;s Spring 2018 course Intermediate Programming.
+This site contains learning materials, tutorials, projects, and student links.</description>
+    </item>
+    
+  </channel>
+</rss>

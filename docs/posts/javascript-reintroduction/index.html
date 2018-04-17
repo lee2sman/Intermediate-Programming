@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Javascript, A Reintroduction  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    15 February 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Javascript, A Reintroduction</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/js.png" alt="JS image" /></p>
+
+<h1 id="javascript-a-reintroduction">Javascript, A Reintroduction</h1>
+
+<ul>
+<li>We won&rsquo;t be starting from the ground floor with Javascript. For introductory tutorials, check out:
+
+<ul>
+<li>W3Schools <a href="https://www.w3schools.com/js/default.asp">tutorials</a> on Javascript</li>
+<li><a href="https://eloquentjavascript.net/">Eloquent Javascript</a></li>
+</ul></li>
+</ul>
+
+<h1 id="where-to-use-javascript">Where to use Javascript</h1>
+
+<ul>
+<li>In the console</li>
+<li>Between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> in your HTML page</li>
+<li>In an external file called by <code>&lt;script src=&quot;myfile.js&quot;&gt;&lt;/script&gt;</code> on your HTML page</li>
+<li>And in the commandline/Terminal using NodeJs</li>
+</ul>
+
+<h1 id="javascript-output">Javascript Output</h1>
+
+<p>JavaScript can &ldquo;display&rdquo; data in different ways:</p>
+
+<ul>
+<li>Writing into an HTML element, using innerHTML. <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_dom">Example</a></li>
+<li>Writing into the HTML output using document.write(). <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write">Example</a></li>
+<li>Writing into an alert box, using window.alert(). <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write_over">Example</a></li>
+<li>Writing into the browser console, using console.log(). <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_alert">Example</a></li>
+</ul>
+
+<h1 id="javascript-statements">JavaScript Statements</h1>
+
+<p>JavaScript statements are composed of:</p>
+
+<ul>
+<li>Values</li>
+<li>Operators</li>
+<li>Expressions</li>
+<li>Keywords</li>
+<li>Comments</li>
+</ul>
+
+<h1 id="single-line-comments">Single Line Comments</h1>
+
+<ul>
+<li>Single line comments start with //</li>
+</ul>
+
+<h1 id="data-types">Data Types</h1>
+
+<ul>
+<li>JavaScript variables can hold many data types: numbers, strings, objects and more. Javascript is weakly typed.</li>
+</ul>
+
+<pre><code>var length = 16;                               // Number
+var lastName = &quot;Johnson&quot;;                      // String
+var x = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};    // Object
+</code></pre>
+
+<h3 id="values">Values</h3>
+
+<ul>
+<li>Numbers - There&rsquo;s no such thing as an integer in Javascript!</li>
+<li>Strings - sequences of Unicode characters</li>
+<li>Strings can be accessed like objects</li>
+</ul>
+
+<pre><code>'hello'.length; // 5
+'hello'.charAt(0); // &quot;h&quot;
+'hello, world'.replace('hello', 'goodbye'); // &quot;goodbye, world&quot;
+'hello'.toUpperCase(); // &quot;HELLO&quot;
+</code></pre>
+
+<ul>
+<li>null - a non-value</li>
+<li>undefined - not yet initialized</li>
+<li>boolean - <code>true</code> or <code>false</code></li>
+</ul>
+
+<h3 id="operations">Operations</h3>
+
+<ul>
+<li>Boolean operations such as <code>&amp;&amp;</code> (logical and), <code>||</code> (logical or), and <code>!</code> (logical not)</li>
+</ul>
+
+<h2 id="variables">Variables</h2>
+
+<ul>
+<li>Javascript is a <em>weakly</em> typed language. You don&rsquo;t need to declare a variable&rsquo;s type and there is no error checking.</li>
+<li>ES6 (ECMAScript 2015) was adopted by all the browsers beginning 2015. Where we previously used <code>var</code> to declare a variable, we now have <code>let</code> and <code>const</code>.</li>
+<li><em>let</em> is the new <em>var</em> - <code>let</code> has <em>block scope</em> while <code>var</code> does not.</li>
+<li><code>const</code> is a variable whose value will not change! Reassigning its value will throw an error. It also has block scope.</li>
+</ul>
+
+<h3 id="control-structures">Control Structures</h3>
+
+<ul>
+<li><code>if</code>, <code>else if</code>, <code>else</code></li>
+</ul>
+
+<pre><code>if (myvar === 0) {
+    // then do this
+}
+</code></pre>
+
+<ul>
+<li>While loops for basic looping. Do-while for execution at least once.</li>
+</ul>
+
+<pre><code>while (true) {
+  // an infinite loop!
+}
+</code></pre>
+
+<p>VS</p>
+
+<pre><code>var input; // happens at least once!
+do {
+  input = get_input();
+} while (inputIsNotValid(input));
+</code></pre>
+
+<h2 id="for-loops">For loops</h2>
+
+<pre><code>for (var i=0; i &lt; arr.length; i++) {
+        console.log(arr[i]);
+    }
+</code></pre>
+
+<h2 id="classes-and-objects">Classes and Objects</h2>
+
+<p>Classes are templates used to create objects. Objects are <em>instances</em> of a class. They have <em>instance variables</em> and <em>methods</em> (functions).</p>
+
+<p><code>var obj = new Object();</code></p>
+
+<p>OR</p>
+
+<p><code>var obj = {};</code> - Object Literal Syntax - similar to JSON structure</p>
+
+<ul>
+<li>can be declared and initialized</li>
+</ul>
+
+<h4 id="example">Example</h4>
+
+<pre><code>var obj = {
+  name: 'refridgerator',
+  details: {
+    color: 'white',
+    size: 64
+  }
+};
+</code></pre>
+
+<h2 id="functions">Functions</h2>
+
+<pre><code>function add(param1, param2) {
+       return param1 + param2;
+   }
+</code></pre>
+
+<pre><code>function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Define an object
+var you = new Person('You', 24);
+// We are creating a new person named &quot;You&quot; aged 24.
+</code></pre>
+
+<h3 id="es6-arrow-functions">ES6 arrow functions</h3>
+
+<ul>
+<li>more concise</li>
+<li>they are anonymous and change the way <code>this</code> binds in functions.</li>
+<li><code>function (arguments) { expression }</code> becomes <code>arguments =&gt; expression</code></li>
+</ul>
+
+<pre><code>const sayHello = () =&gt; {
+  console.log(&quot;Hello&quot;);
+}
+</code></pre>
+
+<ul>
+<li>Video <a href="https://www.youtube.com/watch?v=mrYMzpbFz18&amp;index=3&amp;list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr">Intro to Arrow Functions</a>
+with Dan Shiffman</li>
+</ul>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/working-with-data-json/" id="next">
+                &larr; <span class="nav-title nav-title-next">Working with JSON Data</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/github-pages-workflow/" id="prev">
+                 <span class="nav-title nav-title-prev">A GitHub pages workflow</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

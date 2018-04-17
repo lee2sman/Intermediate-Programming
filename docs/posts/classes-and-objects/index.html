@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Classes and Objects in Javascript ES6  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    05 March 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Classes and Objects in Javascript ES6</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/class.jpg" alt="dog class" /></p>
+
+<h2 id="what-is-a-class">What is a class?</h2>
+
+<h2 id="what-is-an-object">What is an object?</h2>
+
+<p>In a programming language, a <em>class</em> is a defined code template that is used to create objects. Objects can have default <em>instance variables</em> and methods (functions). We say that classes <em>encapsulate</em> objects.</p>
+
+<ul>
+<li>They store functions and variables together</li>
+<li>A class is a template - a <em>cookie-cutter</em></li>
+<li>They are used to <em>stamp out</em> individual Objects</li>
+<li>When we stamp out or create an object using the Class/cookie cutter we are said to be <em>instantiating</em> an object. Each object is an <em>instance</em> of the class.</li>
+</ul>
+
+<h2 id="javascript-classes-in-es6">Javascript Classes in ES6</h2>
+
+<p>ECMAScript6 aka ES6 aka ECMAScript 2015 aka <em>harmony</em> was a large change to Javascript&rsquo;s implementation across browsers, the first mass-adopted change since 2009. It provides new syntax for classes and objects, modules, variables, loops, functions and more.</p>
+
+<p>There are many ways to create classes and objects in Javascript. Below is a good way to do so using ES6 features.</p>
+
+<h2 id="writing-a-class">Writing a class</h2>
+
+<ul>
+<li>At the top of the class is a constructor function</li>
+<li>The constructor is kind of like an object&rsquo;s <em>setup</em> in that it provides the initial values for any passed variables and it creates new variables that may be used in class</li>
+<li><code>this</code> is a special keyword in javascript.</li>
+<li>Each time you use the class to create a new object instance, it will have its own variables and functions assigned to it</li>
+<li>If I have a class <em>People</em> and a variable <em>name</em> it&rsquo;s important that my <em>Billy</em> object has the name <em>Billy</em> and if I also make a <em>Sally</em> object it has its name variable be <em>Sally</em> and not Billy. (Sorry for this metaphor)</li>
+<li>We use <code>this</code> in front of the variables because each stamped out object will need to reference its own version of that variable</li>
+<li>Note that functions inside of classes are called methods. You don&rsquo;t need to include the word <code>function</code> in front of them since they are understood as functions without it.</li>
+<li><code>new</code> is the instruction to create an object</li>
+<li>it creates an object <em>instance</em></li>
+</ul>
+
+<h2 id="an-example-class">An Example Class</h2>
+
+<pre><code>class Person {
+	constructor(name,x,y) {
+		this.name = name; //takes the passed name and sets the local name variable
+		this.x = x //takes the passed x value
+		this.y = y //takes the passed y
+		this.message = &quot;Hi &quot;+this.name;
+	}
+
+drawName(){
+	text(this.message,this.x,this.y);
+}
+
+function setup(){
+	wolfgang = new Person(&quot;Wolfgang&quot;,100,200);
+	clara = new Person(&quot;Clara&quot;,200,350);
+}
+
+function draw(){
+	wolfgang.drawName;
+	clara.drawName;
+}
+</code></pre>
+
+<h2 id="default-arguments">Default arguments</h2>
+
+<ul>
+<li>Default arguments are optional</li>
+<li>You can include default values for the variables connected to each object</li>
+<li>You can specify in the constructor like this: <code>constructor(x = 100, y = 300)</code></li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+<li>Tutorial <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w&amp;index=5&amp;t=773s&amp;list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr">video</a> by Dan Shiffman</li>
+<li>Mozilla&rsquo;s Classes <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">reference</a> page</li>
+<li>Classes <a href="https://googlechrome.github.io/samples/classes-es6/">example</a> by Google Chrome team.
+
+<ul>
+<li><a href="https://github.com/GoogleChrome/samples">More</a> Google Chrome ES6 examples</li>
+</ul></li>
+</ul>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/intro-to-languages/" id="next">
+                &larr; <span class="nav-title nav-title-next">A dozen language tutorials</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/linux-on-windows/" id="prev">
+                 <span class="nav-title nav-title-prev">Linux on Windows 10</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

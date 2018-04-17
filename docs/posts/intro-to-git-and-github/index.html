@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Intro to Git and GitHub  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    12 January 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Intro to Git and GitHub</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/version.png" alt="version control in legos" /></p>
+
+<h1 id="what-is-version-control">What is Version Control?</h1>
+
+<p>Version Control is the practice of saving copies or snapshots of your code at each significant stage as you work on a project. Like a meta-undo, version control lets you move forward and backward in time to get to different versions of your code across a project&rsquo;s files. Without version control software, you might take a DIY approach by copying a project&rsquo;s entire directory and naming it with the date. But what if you want to make multiple copies with slightly different versions and you want to use parts of each of these versions? What if you want to share and work simultaneously on a project with partners? How can multiple people collaborate together over time? Version control software lets you do this.</p>
+
+<p><strong>Git</strong> is local version control software that you run on your own computer. It lets you track changes to your files incrementally over time. Each project has its own git files. <strong>GitHub</strong> is a software company as well as the name for the website where you can post your projects you are tracking with git. You take copies of your git-tracked programs and push them to a remote <em>GitHub</em> server. You should know there are alternative websites and repository managers including <a href="http://gitlab.com">GitLab</a>, <a href="https://bitbucket.org/">Bitbucket</a>, <a href="https://sourceforge.net/">SourceForge</a> and others. In this article, I&rsquo;ll only be covering GitHub.</p>
+
+<p>I also recommend <a href="http://ericsink.com/vcbe/html/bk01-toc.html">Version Control By Example</a>, an affordable and easy-to-read book, along with free online version.</p>
+
+<h4 id="why-use-git-and-github">Why Use Git and GitHub?</h4>
+
+<ul>
+<li>track changes (a.k.a. version control = undo or go back to earlier version of your program if you made a mistake)</li>
+<li>to save your content and all of its changes on a remote server</li>
+<li>to share your code with others</li>
+</ul>
+
+<h4 id="version-control-models">Version Control models</h4>
+
+<ul>
+<li><em>centralized</em> - one central server. each person checks out and merges changes to a main server. only one person can &ldquo;check out&rdquo; the code at a time.</li>
+<li><em>distributed</em> - each person has a local repository. when they make changes, they &ldquo;check in&rdquo; with the main online copy and reconcile the two together. (GitHub is this style)</li>
+</ul>
+
+<h4 id="goals-of-git">Goals of Git</h4>
+
+<ul>
+<li>It&rsquo;s fast - add to your team and code base quickly</li>
+<li>it&rsquo;s distributed</li>
+<li>each commit has a corresponding <a href="https://en.wikipedia.org/wiki/Hash_function">hash</a> (meaning every single change is tracked)</li>
+<li>everyone working on the code has a local copy of the history of the program</li>
+<li>If you fork (aka copy) someone else&rsquo;s code/program, you pull it onto your computer so that you can edit the code. Afterwards, you can push it to your own online repository (aka repo) or you can do a pull request to the original code and that person will look at your code and decide to integrate the two together (or not).</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<p><a href="http://git-scm.com/downloads">Download Git</a></p>
+
+<p>On a Mac, you get Git when you install XCode or the XCode Command Line Tools.</p>
+
+<h3 id="set-up-github-for-your-machine">Set up GitHub for your machine</h3>
+
+<p>You should only need to do this section once!</p>
+
+<p>Set the default name for git to use when you make a commit.</p>
+
+<pre><code>git config --global user.name &quot;Your name Here&quot;
+</code></pre>
+
+<h3 id="set-up-your-email-connection">Set up your email connection</h3>
+
+<pre><code>git config --global user.email &quot;your_email@example.com&quot;
+</code></pre>
+
+<h3 id="your-first-tracked-file">Your first tracked file</h3>
+
+<ul>
+<li>Create a project folder</li>
+<li>use a text editor and save a text file called hello_world.txt to your folder</li>
+<li>tell git to track changes</li>
+</ul>
+
+<p>Use <code>git init</code> to initialize tracking your project folder aka your local repository.</p>
+
+<h3 id="now-let-s-add-your-files-s">Now let&rsquo;s add your files(s)</h3>
+
+<pre><code>git add hello_world.txt
+</code></pre>
+
+<h3 id="you-can-always-check-your-repository-status-with">You can always check your repository status with</h3>
+
+<pre><code>git status
+</code></pre>
+
+<p>Your file is now being tracked by git. Let&rsquo;s tell git to <em>commit</em> the file.</p>
+
+<pre><code>git commit -m &quot;First commit. Added hello world to repository.&quot;
+</code></pre>
+
+<p>Make sure you include the <code>-m</code> flag. Without it, your Terminal application will likely launch Vim, a text editor, and it&rsquo;s not particularly beginner-friendly.</p>
+
+<p>What did we just do? How is this different than saving a file?</p>
+
+<ol>
+<li>When we add a new file, we tell Git to add the file to the repository to be tracked</li>
+<li>We say <code>git add filename</code> to stage a file. When we stage an existing file, we are telling Git to track the current state of the file.</li>
+<li>A commit saves changes made to a file, not the file as a whole. The commit will have a &lsquo;hash&rsquo; so we can track which changes were committed when and by whom</li>
+</ol>
+
+<h3 id="standard-workflow-with-git">STANDARD WORKFLOW with Git</h3>
+
+<p>We will work in our IDE and each time we get to a good stopping point/save point, we will save our file(s) inside our repository folder. Then we head back to the Terminal, make sure we <code>cd</code> into our repository folder if we&rsquo;re not already there.</p>
+
+<p>Then we add and then commit our changes.</p>
+
+<pre><code>git add fileWeChanged
+</code></pre>
+
+<p>If we have multiple files we&rsquo;ve changed:</p>
+
+<pre><code>git add file1 file2
+</code></pre>
+
+<p>Now let&rsquo;s commit them.</p>
+
+<pre><code>git commit -m 'fixed our header'
+</code></pre>
+
+<p>This is the commit <em>message</em> so we know what we changed in this version of our code.</p>
+
+<p>We continue this process in a loop. We work in our IDE. We save. When we are ready we return to the Terminal, add our files, then commit them with a message.</p>
+
+<h3 id="to-see-all-your-commits">To see all your commits</h3>
+
+<pre><code>git log
+</code></pre>
+
+<p>OR</p>
+
+<pre><code>git log --pretty=oneline
+</code></pre>
+
+<h3 id="a-gui-for-working-with-git-instead-of-the-terminal">A GUI for working with Git instead of the Terminal</h3>
+
+<p>There is a <a href="http://git-scm.com/downloads/guis">GUI/Graphical Interface</a> should you prefer to use one.</p>
+
+<p>In general, there are more options when working in the command line.</p>
+
+<h3 id="branching">Branching</h3>
+
+<p>You may wish to work on several copies of your project with slightly (or dramatically) different codebases. Maybe you have a desktop and a mobile version of your project, or one for Mac and PC, or regular and experimental versions.</p>
+
+<p>For each version you can create a different branch.</p>
+
+<pre><code>git checkout -b version2
+</code></pre>
+
+<h3 id="find-out-which-branch-you-re-in">Find out which branch you&rsquo;re in</h3>
+
+<pre><code>git branch
+</code></pre>
+
+<h3 id="merging-branches">Merging Branches</h3>
+
+<p>Maybe you were working on a stable branch and an experimental branch and you want to merge these two together. Generally, your first and main branch is called the <em>master</em> branch. You can merge your version2 with your master.</p>
+
+<pre><code>git merge version2
+</code></pre>
+
+<h1 id="github-versus-git">GitHub versus Git</h1>
+
+<p>Git is the software you use on your local computer to track your repository&rsquo;s files. You can always work in Git and not use GitHub if you just want to track your changes locally. However, if you want to make backup copies stored on a remote server, or work collaboratively on code with others, you&rsquo;ll want to put your code online. GitHub is a great way to do that and it works seamlessly with Git.</p>
+
+<h3 id="let-s-make-our-local-repository-for-a-project">Let&rsquo;s make our local repository for a project</h3>
+
+<pre><code>mkdir hello-github
+cd hello-github
+git init
+</code></pre>
+
+<p>We&rsquo;ve made a project folder. Moved inside it. And initialized it so that Git will be used for tracking our files over time.</p>
+
+<h3 id="adding-a-remote-github-repository">Adding a remote GitHub repository</h3>
+
+<p>We want our remote GitHub repository to be a copy of the important <em>commits</em> (aka snapshots of our project&rsquo;s complete code files).</p>
+
+<p>Let&rsquo;s connect our local repository to a GitHub repository.</p>
+
+<p>On github.com let&rsquo;s create a repository. Click the + button. Give the project a name. Initialize it.
+It will give you a git URL. Copy it.</p>
+
+<p>Now go back to your Terminal. To connect our local repository to the one hosted on GitHub, we run:</p>
+
+<pre><code>git remote add origin git://github.com/github-name/project-name
+</code></pre>
+
+<h3 id="pushing-our-code-to-our-github-repository">Pushing our code to our Github repository</h3>
+
+<p>After you&rsquo;ve connected your local repository to the GitHub one we need to run this command for the first time.</p>
+
+<pre><code>git push -u origin master
+</code></pre>
+
+<p>Going forward our standard protocol will be to just run</p>
+
+<pre><code>git push
+</code></pre>
+
+<p>This takes our committed files and pushes a copy to our GitHub repository.</p>
+
+<h3 id="readmes">READMEs</h3>
+
+<p>It is considered good form to make a README.md file in Markdown text and saved in the root directory of your repository. This can contain basic info on the project, starter information, or anything else. GitHub will automatically present this file when someone visits your repository&rsquo;s page.</p>
+
+<h3 id="edit-the-readme-file-example">Edit the ReadMe file (example)</h3>
+
+<pre><code>git add README.md
+git commit -m 'added README.md'
+git push origin master
+</code></pre>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/github-pages-workflow/" id="next">
+                &larr; <span class="nav-title nav-title-next">A GitHub pages workflow</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/intro-to-command-line/" id="prev">
+                 <span class="nav-title nav-title-prev">Working With the Command Line</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

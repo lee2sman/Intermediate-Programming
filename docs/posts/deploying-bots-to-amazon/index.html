@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Botmaking - Deploying to Amazon  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    23 February 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Botmaking - Deploying to Amazon</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/servers.png" alt="servers clean" />
+<img src="/images/servers.jpg" alt="servers mess" /></p>
+
+<p>This week we are reviewing our Twitter bots and deploying them to Amazon AWS.</p>
+
+<h2 id="critique-of-the-bots">Critique of the bots</h2>
+
+<ul>
+<li>Our class bots can be found <a href="https://twitter.com/2sman2sman/lists/woodbury-bots/">here</a></li>
+<li>The list of bots is <a href="https://twitter.com/2sman2sman/lists/woodbury-bots/members">here</a></li>
+</ul>
+
+<h2 id="deploying-to-amazon-choosing-web-services">Deploying to Amazon - Choosing Web Services</h2>
+
+<p>Amazon&rsquo;s web store relies on a huge server infrastructure. Beginning in 2006 they launched a subsidiary company Amazon Web Services to provide on-demand cloud computing (servers).</p>
+
+<p>Amazon Web Services run on <a href="https://arstechnica.com/uncategorized/2012/03/cracking-the-cloud-an-amazon-web-services-primer/">server farms</a>.</p>
+
+<p>There are several options:</p>
+
+<p><strong>Elastic Cloud Compute</strong> - these are virtual machines that can run an <em>instance</em> of Linux or Windows, and left continuously running. It scales based on a user&rsquo;s needs.It uses Elastic Load Balancing around the world and manages where your data is served depending on your user location. Choose this option when you need a continously running server and persistent data saving and retrieval.</p>
+
+<p>You can get up to 750 hours of EC2 service over 1 year for free <a href="https://aws.amazon.com/ec2/">here</a>.</p>
+
+<h1 id="how-to-deploy-your-twitter-bot-to-amazon-ec2">How to deploy your Twitter Bot to Amazon EC2</h1>
+
+<h3 id="summary">Summary</h3>
+
+<ol>
+<li>Sign up for Amazon EC2 (an online virtual server space). We are going to create an <em>instance</em>, which is a single computer in a <em>cloud</em> computing space. We will choose a Ubuntu Linux instance.</li>
+<li>Create a public and private key pair. Great <a href="https://www.youtube.com/watch?v=ZghMPWGXexs">tutorial</a> video explaining what this key pair is</li>
+<li>We can connect to this remote server (computer) in our Terminal with a program called ssh (secure shell), using our key pair. Our remote server will be empty when it is created</li>
+<li>Using Secure FTP (aka SSH FTP) we will upload our bot, config.js and packages.json files. I recommend the free ftp program Filezilla.</li>
+<li>We need to install node on our remote server and npm, the node package manager. A package manager is a program that has access to lots of software repositories for different tasks. We do this inside our terminal connected to the remote server instance using ssh.</li>
+<li>We then use <code>npm install</code> to install the latest versions of Twit (a Twitter program) and any other needed npm node packages.</li>
+<li>We test our node file by running it on the server. If it works, quit. If it doesn&rsquo;t, quit and debug.
+. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.. If it works, quit. If it doesn&rsquo;t, quit and debug.</li>
+<li>We use npm to install <em>forever</em>, a program that can manage our forever-running bot. We then use forever to start our bot. Our bot is now deployed. Congratulations! Phew!</li>
+</ol>
+
+<p>Here are the steps in more detail.</p>
+
+<h1 id="step-by-step-deploying-to-amazon-ec2">Step-by-Step: Deploying to Amazon EC2</h1>
+
+<p>1 Go to Amazon EC2</p>
+
+<p>2 Sign up</p>
+
+<p>3 Launch an Instance</p>
+
+<p>4 Choose Ubuntu Server <em>Free tier eligible</em>.
+Choose General Purpose. Free Tier.</p>
+
+<p>5 Review and Launch. Now Launch.</p>
+
+<p>6 Now you need to authenticate!
+* Create a new key pair
+* Download key pair.
+* Save it somewhere on your computer where you won&rsquo;t lose it!</p>
+
+<p>7 Now you can Launch Instances</p>
+
+<p>8 let&rsquo;s use our key file to log in to our instance.</p>
+
+<p>9 Let&rsquo;s give ourselves permission to work with the file.</p>
+
+<p>10 Open the command line. Go to the directory where you&rsquo;ve saved your key pair. Type <code>chmod 400 filename.pem</code> <em>Chmod</em> is a command to change permissions on a file. <em>400</em>  will make it so that others cannot read our private info.</p>
+
+<p>11 We are going to ssh (secure shell) to our remote instance on Amazon EC2. We will be typing in our own computer&rsquo;s Terminal but executing the commands on the remote server EC2 instance.</p>
+
+<p>12 Click connect. It will give you the full ssh command to enter in your Terminal.</p>
+
+<p>13 Enter it. Say yes you trust it. The Terminal will now change its prompt to show you are in the logged-in Ubuntu remote instance.</p>
+
+<p>14 Let&rsquo;s get our bot to the remote server. Many ways to do this. One option is <a href="https://filezilla-project.org/">FileZilla</a> for Mac, PC, Linux.</p>
+
+<p>15 Open your FTP software. There are 2 large windows. One window will show your own computer&rsquo;s files. The other window shows the remote server&rsquo;s files once you connect. You&rsquo;ll notice it asks for your host server, username and password. We don&rsquo;t have that. Instead, we are going to use our key pair..</p>
+
+<p>16 Open the Site Manager. Create a New site. Enter your host from Amazon&rsquo;s connect info. Choose Protocol SFTP (ssh ftp). Logon type is Key file. User is <em>ubuntu</em>. Choose the Key file you saved on your computer previously. Then choose connect. If successful, your files on the server will load.</p>
+
+<p>17 You can now upload your files for your bot. Drag the files from your computer to the server folder. Drag over: sketch.js (or whatever your js file is called), config.js, and modules.json</p>
+
+<p>18 Go back to your Terminal where you&rsquo;re logged into your Ubuntu instance.</p>
+
+<p>19 If you <code>ls</code> you&rsquo;ll see your files there now.</p>
+
+<p>20 You need to install node and get this server configured with your needed software.</p>
+
+<p>21</p>
+
+<pre><code>sudo apt-get update
+sudo apt-get install nodejs-legacy
+sudo apt-get install npm
+</code></pre>
+
+<p>22 Check that everything is working. Type <code>node</code> and make sure it drops into node on the server. To get out of node, you&rsquo;ll type <code>.exit</code> or Control-C.</p>
+
+<p>23 Let&rsquo;s now install our needed node modules. <code>npm install</code> and it will download your needed modules onto the server. It knows what modules to install based on your modules.json file you transferred over before through ftp.</p>
+
+<p>24 You should be able to run your code on the server now. <code>node sketch.js</code> Note that node-legacy does not like if you use <code>let</code> instead of <code>var</code> and will give you an error. If this happens to you force it to accept it. Open up your sketch.js or whatever you called your file. Add the line <code>use strict;</code> at the beginning of the file. Save and re-upload with Filezilla.</p>
+
+<p>25 Try it again on the server. <code>node sketch.js</code> If it works, let&rsquo;s make it permanently run. <code>sudo npm install forever -g</code>. This installs the tool <em>forever</em> globally so all node packages can use it.</p>
+
+<p>26 We can now run this <em>forever</em> with <code>forever start sketch.js</code></p>
+
+<p>27 To test what bots are running in the future if you login you can type <code>forever list</code> to see what&rsquo;s running on the instance. Note that some students found that posting every five minutes causes Twitter to flag you and turn you off. I run my bots once an hour and haven&rsquo;t had an issue. To post once an hour, change this line to <code>setInterval(tweeter, 3600000);</code> so that it posts once every 3600000 milliseconds (aka 1 hour).</p>
+
+<p>28 If you want to stop your bots you can type <code>forever stopall</code> and restart with <code>forever start</code></p>
+
+<h1 id="tutorial">Tutorial</h1>
+
+<p>Video <a href="https://www.youtube.com/watch?v=26bajyD4fLg">tutorial</a> by Dan Shiffman on deploying to EC2.</p>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/linux-on-windows/" id="next">
+                &larr; <span class="nav-title nav-title-next">Linux on Windows 10</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/botmaking-create-a-twitter-bot/" id="prev">
+                 <span class="nav-title nav-title-prev">Create a Twitter Bot</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

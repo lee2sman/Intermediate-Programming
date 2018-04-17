@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Working With the Command Line  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    11 January 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Working With the Command Line</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/cli.gif" alt="Fish shell" /></p>
+
+<h1 id="running-your-computer-from-the-command-line">Running Your Computer From the Command Line</h1>
+
+<h3 id="what-is-the-command-line">What is the command line?</h3>
+
+<p>The <strong>command-line interface</strong>, sometimes referred to as the CLI, is a tool into which you can type text commands to perform specific tasks—in contrast to the mouse&rsquo;s pointing and clicking on menus and buttons. Since you can directly control the computer by typing, many tasks can be performed more quickly, and some tasks can be automated with special commands that loop through and perform the same action on many files—saving you, potentially, loads of time in the process.</p>
+
+<p>The application or user interface that accepts your typed responses and displays the data on the screen is called a <strong>shell</strong>, and there are many different varieties that you can choose from, but the most common these days is the <strong>Bash</strong> shell, which is the default on Linux and Mac systems in the <strong>Terminal</strong> application.</p>
+
+<h3 id="what-is-linux">What is Linux?</h3>
+
+<p>Linux is a family of free open-source operating systems for computer systems, originally built as a clone of the proprietary Unix operating system. It is the leading operating system on web servers, hardware, and all Android phones. It is the largest open source collaborative project in the world, with thousands of contributors working together online for the past 30 years. Anyone may modify and distribute new versions of Linux.</p>
+
+<h3 id="the-philosophy-behind-the-command-line">The philosophy behind the command line</h3>
+
+<p>The command line is the place where you type commands to manipulate files on your computer or launch programs that perform tasks. In some ways the command prompt is the <em>simplest</em> kind of computer interface possible. It is likely that you are more familiar with interfaces that have windows and buttons, but the command prompt is an interface entirely driven by text input. As mentioned earlier, Linux was originally an open source clone of Unix. In Unix (and Linux), programs are intended to be minimal, modular, &ldquo;do one thing well&rdquo;, be clear, transparent, and extendable.</p>
+
+<h3 id="command-line-advantages">Command-line advantages</h3>
+
+<p>Since Linux command line programs are short, modular and inter-operable writing a program for the command prompt is easier than writing a program with a graphical interface (for example creating windows and buttons). Learning to use the command prompt will open up new worlds for you. You will have access to a wide variety of programs and technologies, many that may have been off-limit or hidden before, and many with options that can go far beyond what a graphical program allows.</p>
+
+<p>Nearly every computer from OS X, Raspberry Pi to web servers, internet devices, routers and robots can be controlled through the command line, and even more devices are being created that can be interacted with that are online (through the so-called &ldquo;Internet Of Things&rdquo;, which is a nebulous term but is driven on the back of the command line). The command line is present on devices that don&rsquo;t even have a screen, mouse, internet, et cetera and for many server tasks command line knowledge is essential.</p>
+
+<h3 id="how-to-access-the-command-line-on-a-mac">How to Access the Command Line on a Mac</h3>
+
+<p>On a Mac you access the <em>Terminal</em> application, located inside the Utilities folder inside the Applications folder on your hard drive. You can also access the terminal from Spotlight, which looks like a magnifying glass in the top right of your menu bar. Another way to access Spotlight is through the default key macro <em>Command-Space.</em> Once you have the basics down, you may wish to download <strong>iTerm</strong> a free replacement Terminal for Mac with nice color and style options and multi-screen support. Hardcore computer users may already know: Technically, Macs run <em>Darwin</em>, a free open-source Unix and Linux-like operating system based on the work of many previous Unix and Linux distributions.</p>
+
+<h3 id="accessing-the-command-line-on-a-pc">Accessing the Command Line on a PC</h3>
+
+<p>PC&rsquo;s come with a default Powershell, but it is not a Linux-style shell. In other words, the programs and tools for working on the command line in this intro will not work in Powershell. As of the time of writing (Spring 2018), I recommend downloading the free terminal program <a href="http://http://cmder.net/">Cmder</a> for a Linux-style shell on PC, including the underlying Git-Bash and Linux for Windows. You may also wish to read about <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsytem for Linux</a>.</p>
+
+<h1 id="your-file-system">Your file system</h1>
+
+<p>Understanding what folder you are located in is important when working on the command line. The <em>path</em> refers to the file system and series of directories (aka folders) that indicate where you are currently located in the file system.</p>
+
+<p>Every computer has a root or top level directory. That&rsquo;s the <em>grandparent</em> folder, if you will. It&rsquo;s not located inside a directory. It IS the highest level directory that everything else on your computer is located inside. In the Macintosh HD you will find the folders <em>Applications</em>, <em>Library</em>, <em>System</em> and <em>Users</em>. The <em>Users</em> folder will contain a home folder for all of the users of your system. If you don&rsquo;t have multiple people that use your computer each with their own logon account then you likely only have one user (for example, I have a home folder named <em>Lee</em>) in addition to a <em>Shared</em> folder.</p>
+
+<h1 id="your-path">Your PATH</h1>
+
+<p>The home folder is the default location that you start in when you open the terminal. On a Mac you can test this under the finder. Choose the Go Menu and select Home and it will open that folder.</p>
+
+<p>When you are moving around the computer in your file system with the Terminal, you specify the name of the folder you want to move into or work in. Linux allows you to specify a <strong>full path</strong> or a relative location. Think of the full path as a specific address, like <em>500 Main Street, New York, NY 11101</em>. A <strong>relative</strong> path is exactly what it sounds like. To use our street metaphor, a relative path would sound something like <em>2 blocks west and 1 block north of where you&rsquo;re currently located</em>. In other words, the location specified by the relative path changes based on where you are currently located. If you&rsquo;re at your house and follow the directions specified by the relative path, you&rsquo;ll wind up in a very different location than if you were at your work address and then followed the directions of the relative path.</p>
+
+<p>This is an important concept because you always have a choice of what path you write when working on the command line. You can specify an exact location or a relative location. <strong>When you don&rsquo;t specify a path, the terminal assumes the location is the directory you are currently inside.</strong></p>
+
+<p>Sometimes in online tutorials you&rsquo;ll see something that looks like this: <code>path/to/file</code>. You will never actually type <code>path/to</code>. It simply is trying to indicate that you&rsquo;ll need to replace it with the proper location on your own computer. The Mac Terminal has a cool feature to make this easier for beginners. You can drag a file or folder onto the terminal and it will fill out the exact path.</p>
+
+<h1 id="your-basic-terminal-commands">Your basic terminal commands</h1>
+
+<p>The following commands are your standard everyday Bash commands for checking what folder you are located in on the computer, changing folders, listing the files in a folder, moving and copying files, and editing text files. All of the commands listed here are basic built-in programs. If you&rsquo;d like to read more about any of them, remember that most Bash commands and programs have a built-in manual page. You can access it by typing <code>man</code> before the program you want to run. There&rsquo;s even a manual for the manual. You can access it by running <code>man man</code>.</p>
+
+<h3 id="print-working-directory-pwd">Print Working Directory, <code>pwd</code></h3>
+
+<p>This may sound a little obtuse, but it makes sense when you learn what it does. You use this command to remind you what folder you&rsquo;re currently located in. As you move around files or move between directories it&rsquo;s easy to get lost. pwd will remind you exactly where you are.</p>
+
+<h5 id="example">Example</h5>
+
+<p><code>pwd</code></p>
+
+<h3 id="list-files-ls">List Files, <code>ls</code></h3>
+
+<p><code>ls</code> is the list function. It lists all of the files in a directory, including text files, images, audio and sub-folders, among other files. It is common to run <code>ls</code> with one or two flags (or options).</p>
+
+<h5 id="examples">Examples</h5>
+
+<p><code>ls</code> just outputs the content of your folder in a mass.</p>
+
+<p><code>ls -1</code> lists them alphabetically, each file or folder on its own line to make it easier to read.</p>
+
+<p><code>ls -a</code> will list all files including hidden files in the folder.</p>
+
+<h3 id="change-directory-cd">Change Directory, <code>cd</code></h3>
+
+<p><code>cd</code> stands for change directory and is the workhorse function to let you navigate around the computer. Let&rsquo;s say you&rsquo;ve run the <code>ls</code> command and you see your current directory has a directory inside it called Funnn then you would run <code>cd Funnn</code> to move into that directory. By the way, this is as good a place as any to let you know about two special commands. A period is a type of wildcard function in the Shell. Every directory has at least two hidden files, <code>.</code> and <code>..</code> at the very least. If you type <code>cd .</code> then you are not really doing anything since you&rsquo;re saying you want to change to the current directory you are in. <code>..</code> stands for the larger umbrella directory that holds the directory you are currently inside of. If you type <code>cd ..</code> it will take you back to one directory broader than the one you are currently located in. The tilde character <code>~</code> stands for your home directory. Typing <code>-</code> will stand in for the <em>previous directory</em> you were in prior to this.</p>
+
+<h5 id="examples-1">Examples</h5>
+
+<p><code>cd directoryName</code> to move into the directory titled directoryName currently sitting inside the directory you are presently located in. If you type the folderName incorrectly or it doesn&rsquo;t exist then you&rsquo;ll get an error message telling you that the folder doesn&rsquo;t exist.</p>
+
+<p><code>cd ..</code> will take you to the larger directory that holds the directory you are currently located in. If you were in the directory <code>refrigerator</code> and then you made a folder inside that called <code>drawer</code>, maybe you have gone into that drawer with <code>cd drawer</code> to see its contents. If you <code>cd ..</code> then you will leave and go back into the directory called <code>refrigerator</code> from before.</p>
+
+<p><code>cd</code> will take you to your home folder, no matter where you were before.</p>
+
+<p><code>cd ~</code> does the same as above, taking you to your home folder.</p>
+
+<p><code>cd ~/Desktop/junk</code> will take you to a folder called junk located on the Desktop folder, which is sitting inside your home folder on your hard drive. Remember that the tilde means your home folder. <code>junk</code> is a directory I made on my computer but <code>Desktop</code> is already a directory built-in to OS X.</p>
+
+<p><code>cd -</code> will take you to whatever folder you were last located in</p>
+
+<h3 id="copy-a-file-cp">Copy a file, <code>cp</code></h3>
+
+<p>The command <code>cp</code> is used to duplicate a file, in whatever format it&rsquo;s already in. You specify the file you want to copy, and then give a name for what you want your copy to be called.</p>
+
+<h5 id="example-1">Example</h5>
+
+<p><code>cp fileYouWantToDuplicate nameForTheDuplicateFile</code></p>
+
+<h3 id="move-a-file-and-or-rename-a-file-mv">Move a file (and/or rename a file), <code>mv</code></h3>
+
+<p>The command <code>mv</code> works almost exactly the same as <code>cp</code> but instead of copying it moves the location of a file. You specify the file you want to move, and then give the path where you want to move it. If you specify a different name, the file&rsquo;s contents will remain the same but the filename will change. You could even use this, for example, to just change the filename but keep it in the same folder it&rsquo;s located in. <em>Note: It&rsquo;s important to be mindful of what folder you are located in.</em></p>
+
+<h5 id="example-2">Example</h5>
+
+<p><code>mv fileYouWantToMove path/to/directoryWhereYouWantToMoveIt</code> will move a file inside your current directory to a different specified folder.</p>
+
+<p><code>mv fileName newFileName</code> will keep the file inside your folder but rename it.</p>
+
+<h3 id="remove-a-file-or-directory-rm-and-rmdir">Remove a file or directory, <code>rm</code> and <code>rmdir</code></h3>
+
+<p>Want to get rid of a file? You could drag it to the trash, or you could use the remove command. One thing to note is that by default, using <code>rm</code> does not check in with you to confirm you really do want to eliminate the file. It will instantly delete it and you can&rsquo;t get it back. It&rsquo;s safer to use <code>rm -i</code>, which will ask you to confirm each file before it&rsquo;s deleted. To remove a directory, you must use <code>rm -d</code> or <code>rmdir</code>. <strong>By default, you cannot delete a directory if it is not empty. You must first delete the individual files inside that directory. To force the deletion of a directory even if it has files inside it, use the option <code>-f</code>. To recursively delete a directory as well as all of the files and directories inside it, use <code>-r or -R</code> but beware as this could cause you to be very unhappy if you lose files you were unexpecting. The option <code>-v</code> stands for verbose and indicates that more detailed information will be given about the files that were deleted.</strong></p>
+
+<h5 id="examples-2">Examples</h5>
+
+<p><code>rm filename</code> to delete a file in your current directory.</p>
+
+<p><code>rmdir folderName</code> to delete a specified directory inside your current directory.</p>
+
+<p><code>rm -drf folderName</code> will force delete a folder as well as all of the folders and files inside of it. <strong>Use this function with extreme care</strong>.</p>
+
+<h3 id="clear-your-screen-clear">Clear your screen, <code>clear</code></h3>
+
+<p>When you need a refresh and want to clear all of your previous commands and output from your field of view, run <code>clear</code>. It doesn&rsquo;t delete your history (see <code>history</code> below for more info on this), but it does help declutter your screen.</p>
+
+<h5 id="example-3">Example</h5>
+
+<p><code>clear</code></p>
+
+<h3 id="read-a-file-cat-and-less">Read a file, <code>cat</code> and <code>less</code></h3>
+
+<p>There are a variety of ways to access and read text in a file on the command line. The simplest is to use <code>cat</code> which stands for concatenate. You specify the file and it dumps the text onto the command line and exits. If you&rsquo;re trying to read a text file and it&rsquo;s too large to fit in a single screen of the terminal you will probably prefer to use <code>less</code>. <code>less</code> is a reader program that lets you move back and forth in a text file. You can move forward a screen at a time by hitting the space bar or scroll down or up with the arrow keys. There are a variety of other options that you can read about if you run <code>man less</code>. When you get to the end of the file, press <em>q</em> to exit back onto the command line.</p>
+
+<h5 id="example-4">Example</h5>
+
+<p><code>cat filename.txt</code></p>
+
+<p><code>less fileName.txt</code></p>
+
+<h3 id="history-and-command-completion-and-tab">History and Command Completion, <code>↑</code> and <code>Tab ↹</code></h3>
+
+<p>To repeat a terminal command you typed previously press the up key and it will recall the last command you typed in. If you press up again, it will recall the line you typed prior to that. And repeatedly pressing up will move further back in time. You can move back and forth in your history with the up and down arrow keys.</p>
+
+<p>Another timesaver is using the tab key. If you type the first few letters of a filename or directory and press tab the command line will attempt to fill out the rest of the file or directory name. If there are multiple files with the same root, it will complete the part of the name that they share. You can then add more letters and try hitting tab to see if it will complete the file name.</p>
+
+<h3 id="cancelling">Cancelling</h3>
+
+<p>There is an additional important and often-used command: Cancel. Cancel is <code>Control-C</code>. It is a programming text convention to write Control commands with the letter capitalized even though you do not actually type a Shift-Capital Letter when you type them on the computer. So when you see <code>Control-C</code> or <code>CTRL-C</code> or <code>X-C</code> you should actually press the Control key, hold it down, and press the <em>c</em> key and then let go of both.</p>
+
+<p>If you are typing a command and realize you don&rsquo;t want it anymore, type <code>Control-C</code> and it will be deleted.</p>
+
+<p>Similarly, if you are running a program and want to quit out of it, you can usually do so with <code>Control-C</code> once or several times. For example, you can exit out of the jukebox program <code>play</code> by typing <code>Control-C</code> several times in a row.</p>
+
+<p><strong>Additional tutorials, books and information</strong></p>
+
+<p><a href="http://en.flossmanuals.net/command-line/index/">An Introduction To The Command Line</a> - <em>a more extensive online open-source manual</em></p>
+
+<h1 id="cheatsheet">Cheatsheet</h1>
+
+<p><strong><em>Some basic BASH commands</em></strong></p>
+
+<p>Print Working Directory</p>
+
+<ul>
+<li>pwd</li>
+</ul>
+
+<p>List Files</p>
+
+<ul>
+<li>ls</li>
+<li>ls -1</li>
+</ul>
+
+<p>Change Directories</p>
+
+<ul>
+<li>cd <em>directory</em></li>
+<li>cd ..</li>
+</ul>
+
+<p>Copy a file</p>
+
+<ul>
+<li>cp <em>filename</em></li>
+</ul>
+
+<p>Remove a file (Not trash)</p>
+
+<ul>
+<li>rm <em>filename</em></li>
+</ul>
+
+<p>edit text</p>
+
+<ul>
+<li>nano <em>filename.txt</em></li>
+</ul>
+
+<p>display file</p>
+
+<ul>
+<li>more <em>filename.txt</em></li>
+</ul>
+
+<p><em>history</em></p>
+
+<ul>
+<li><em>up or down keys</em></li>
+</ul>
+
+<p><em>tab</em></p>
+
+<pre><code>autocomplete
+</code></pre>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/intro-to-git-and-github/" id="next">
+                &larr; <span class="nav-title nav-title-next">Intro to Git and GitHub</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/google-fonts/" id="prev">
+                 <span class="nav-title nav-title-prev">Working With Google Fonts</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

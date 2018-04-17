@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Working with APIs  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    18 February 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Working with APIs</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/api.png" alt="API" /></p>
+
+<p>We know how to access, parse and modify JSON data. Now we&rsquo;ll look at how we can use functions and API calls to access JSON data on the web.</p>
+
+<h2 id="callbacks">Callbacks</h2>
+
+<ul>
+<li>used in asynchronous programming</li>
+<li>when data is finally loaded, THEN call (run) another function</li>
+</ul>
+
+<p>example</p>
+
+<pre><code>loadJSON(&quot;data.json&quot;, dataReceived);
+
+function dataReceived(){
+  //once data has been loaded, the callback code in here will run
+}
+</code></pre>
+
+<h2 id="accessing-json-locally-and-via-urls">Accessing JSON locally and via URLs</h2>
+
+<p><code>loadJSON(&quot;astros.json&quot;, dataReceived);</code></p>
+
+<p>VS</p>
+
+<p><code>loadJSON(&quot;http://api.open-notify.org/astros.json&quot;, dataReceived);</code></p>
+
+<p>Your JSON file can be local or it can be on another server (at a different URL).</p>
+
+<h2 id="jsonp-to-solve-cross-domain-errors">JSONP to solve cross-domain errors</h2>
+
+<p>Sometimes when working with JSON APIs you can get the following error</p>
+
+<p>&rdquo;&rsquo;
+XMLHttpRequest cannot load <a href="http://external-domain/service">http://external-domain/service</a>. No ‘Access-Control-Allow-Origin’ header is present on the requested resource. Origin ‘<a href="http://my-domain’">http://my-domain’</a> is therefore not allowed access.
+&ldquo;&rsquo;</p>
+
+<ul>
+<li>a web browser may only allow scripts on page A to access data on page B if these two pages have the same origin</li>
+<li>determined by url and port number</li>
+<li>It prevents scripts from reading data from your domain and sending it to their servers</li>
+<li>JSONP helps by pinging the server and returning JSON data wrapped in a function call with callback</li>
+<li>much more detailed info can be found <a href="https://www.sitepoint.com/jsonp-examples/">here</a></li>
+<li>Info on using JSONP in P5JS can be found <a href="https://p5js.org/reference/#/p5/loadJSON">here</a></li>
+</ul>
+
+<h2 id="api">API</h2>
+
+<ul>
+<li>API = application programming interface</li>
+<li>an interface for different pieces of software to communicate together over networks</li>
+<li>created by orgs, programmers, companies to access their data</li>
+<li>there are open APIs and those requiring authorization</li>
+<li>start out by using APIs that have tutorials or sample code and consider trying out ones that don&rsquo;t require authorization</li>
+</ul>
+
+<h2 id="working-with-an-api-the-basics">Working with an API - the basics</h2>
+
+<h2 id="an-example-openweathermap">An example - OpenWeatherMap</h2>
+
+<ul>
+<li>using the <a href="https://openweathermap.org/api">OpenWeatherMap</a> API</li>
+<li>Sign up and make a new account</li>
+<li>Get your private API key</li>
+</ul>
+
+<p><strong>IMPORTANT</strong></p>
+
+<p>Do not post your API key online anywhere publicly! This includes on GitHub.</p>
+
+<p>When working with APIs, they often have a specific way of constructing a URL to access specific data.</p>
+
+<p>Example</p>
+
+<p><code>website.org/?city=London</code></p>
+
+<p>Multiple query values</p>
+
+<p><code>website.org/?city=London&amp;?date=today</code></p>
+
+<p>These are name-value pairs.</p>
+
+<h2 id="how-to-access-openweathermap">How to access OpenWeatherMap</h2>
+
+<p>Construct the URL properly</p>
+
+<p><code>api.openweathermap.org/data/2.5/weather?q=London&amp;APPID=001b0f58045147663b1ea518d34d88b4</code></p>
+
+<ul>
+<li>Note: replace the APPID with your own ID</li>
+</ul>
+
+<p>You can put this URL in your browser to see this data.</p>
+
+<ul>
+<li>You may want to use the JSON Formatter Chrome extension to format this data and make it easier to read.</li>
+<li>Or use Code Beautify <a href="https://codebeautify.org/jsonviewer">JSON Viewer</a></li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+<li>Blog <a href="https://shkspr.mobi/blog/2016/05/easy-apis-without-authentication/">post</a> with a few chosen easy-to-use open APIs</li>
+<li><a href="https://gist.github.com/afeld/4952991">List</a> of source data APIs that do not require authorization or credentials</li>
+<li><a href="https://github.com/toddmotto/public-apis">Public APIs</a> - a large list</li>
+</ul>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/intro-to-node/" id="next">
+                &larr; <span class="nav-title nav-title-next">Intro to NodeJS</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/working-with-data-json/" id="prev">
+                 <span class="nav-title nav-title-prev">Working with JSON Data</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+
+
+ <html class="no-js"> 
+<head>
+    <title>Working with JSON Data  &middot; Intermediate Programming @Woodbury </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Woodbury University">
+    <meta name="description" content="Applied Computer Science">
+    <meta name="generator" content="Hugo 0.37.1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://leetusman.com/intermediate-programmingcss/smooth-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="http://leetusman.com/intermediate-programmingcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" />
+    
+
+    <style>
+        .posts li {
+            visibility: hidden;
+        }
+    </style> 
+</head>
+<body>
+    
+    
+
+    <header>	
+	<div class="h-wrap">
+		
+		<h1 class="title"><a href="http://leetusman.com/intermediate-programming">Intermediate Programming @Woodbury</a></h1>
+		
+	</div>
+</header>
+    
+    <div class="site-wrapper" id="full-wrapper">
+        
+        <section class="single-wrap">
+            <article class="single-content" itemscope itemtype="//schema.org/BlogPosting">
+                <div class="feat">
+                    <h5 class="page-date">
+                    <time datetime="" itemprop="datePublished">
+                    17 February 2018
+                   
+                    </time>
+                    </h5>
+                </div>
+                <h1 class="page-title" itemprop="name headline">Working with JSON Data</h1>
+                <div itemprop="articleBody">
+                    
+
+<p><img src="/images/json.png" alt="JSON data" /></p>
+
+<h2 id="data-formats">Data formats</h2>
+
+<p>Data can be saved in many kinds of formats.</p>
+
+<ul>
+<li>CSV - comma separated values</li>
+<li>XML - an older standard</li>
+<li>JSON - Javascript Object Notation</li>
+<li>text file - each line of the file containing a different data point</li>
+<li>a web page</li>
+</ul>
+
+<h2 id="json">JSON</h2>
+
+<p>JSON is a good standard way of working with data files and is based on how Javascript literal objects are defined.</p>
+
+<h3 id="json-type-examples">JSON Type Examples</h3>
+
+<h4 id="basic-example">Basic Example</h4>
+
+<pre><code>let car = {
+  name: 'Saab',
+  color: 'red'
+  year: 2016
+}
+</code></pre>
+
+<h4 id="json-string">JSON String</h4>
+
+<pre><code>{ &quot;name&quot;:&quot;Ricardo&quot; }
+</code></pre>
+
+<h4 id="json-number">JSON Number</h4>
+
+<pre><code>{ &quot;age&quot;:77 }
+</code></pre>
+
+<h4 id="json-object">JSON Object</h4>
+
+<pre><code>{
+  &quot;person&quot;:{ &quot;name&quot;:&quot;Shankar Patel&quot;, &quot;age&quot;:40, &quot;city&quot;:&quot;Los Angeles&quot; }
+}
+</code></pre>
+
+<h2 id="accessing-json-with-dot-notation">Accessing JSON with Dot Notation</h2>
+
+<pre><code>character = { &quot;name&quot;:&quot;Shredder&quot;, &quot;age&quot;:30, &quot;home&quot;:&quot;TerrorDome&quot; };
+
+enemy = character.name;
+</code></pre>
+
+<h2 id="accessing-json-with-bracket-notation">Accessing JSON with Bracket Notation</h2>
+
+<pre><code>enemy = character[&quot;name&quot;];
+</code></pre>
+
+<h2 id="nested-json">Nested JSON</h2>
+
+<p>Very common!</p>
+
+<p>Example</p>
+
+<pre><code>rappers = {
+    &quot;Migos&quot;: {
+        &quot;rapper1&quot;:&quot;Offset&quot;,
+        &quot;rapper2&quot;:&quot;Quavo&quot;,
+        &quot;rapper3&quot;:&quot;Takeoff&quot;
+    }
+ }
+</code></pre>
+
+<h5 id="access-data-with-dot-or-bracket-notation">Access data with dot or bracket notation.</h5>
+
+<pre><code> let favoriteRapper = rappers.Migos.rapper2;
+</code></pre>
+
+<h5 id="change-data-value">Change data value</h5>
+
+<pre><code>rappers.Migos.rapper2 = &quot;Nardwuar&quot;;
+</code></pre>
+
+<h4 id="json-array">JSON Array</h4>
+
+<pre><code>let class = {
+  &quot;students&quot;:[ &quot;Mohammed&quot;, &quot;Camille&quot;, &quot;Joseph&quot;, &quot;Ben&quot;, &quot;Zane&quot;, &quot;Kyro&quot;, &quot;Kane&quot;, &quot;Edi&quot;, &quot;Tom&quot;, &quot;Matthew&quot;, &quot;Joab&quot;, &quot;Sungmin Lee&quot;, &quot;Brian&quot; ]
+}
+
+let closestStudent = class.students[11]; // Sungmin Lee
+</code></pre>
+
+<h4 id="loading-json-with-p5dom">Loading JSON with P5DOM</h4>
+
+<pre><code>function preload(){
+    catBreeds = loadJSON(&quot;catBreeds.json&quot;);
+}
+
+function setup(){
+  fill(catBreeds.manx.col);
+  text(catBreeds.manx.name, 100, 200);
+}
+</code></pre>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+<li><a href="https://www.w3schools.com/js/js_json_intro.asp">W3Schools JSON intro</a></li>
+<li>Darius Kazemi&rsquo;s <a href="https://github.com/dariusk/corpora">Corpora</a> are mostly JSON files</li>
+</ul>
+                    
+                </div>
+                <div class="feat share">
+                </div>
+                
+                
+                
+            </article>
+        </section>
+
+        <footer>
+	
+	<small>CC4.0 BY</small>
+	
+</footer>
+    </div>
+
+    <div class="next-prev-arrows">
+        
+            <a rel="next" href="http://leetusman.com/intermediate-programming/posts/working-with-apis/" id="next">
+                &larr; <span class="nav-title nav-title-next">Working with APIs</span> 
+            </a>
+        
+        
+            <a rel="prev" href="http://leetusman.com/intermediate-programming/posts/javascript-reintroduction/" id="prev">
+                 <span class="nav-title nav-title-prev">Javascript, A Reintroduction</span> &rarr;
+            </a>
+        
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/scrollreveal.min.js"></script>
+<script type='application/javascript' src='http://leetusman.com/intermediate-programmingjs/smooth-scrollbar.js'></script>
+<script src="http://leetusman.com/intermediate-programmingjs/baffle.min.js"></script>
+<script src="http://leetusman.com/intermediate-programmingjs/main.js"></script>
+
+
+
+
+
+<!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
