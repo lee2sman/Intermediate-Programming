@@ -7,7 +7,7 @@
 * Intro to [Lua](https://github.com/ZaneZee/Basic-HTML-Website/blob/master/mark-down-example.md) and [cheatsheet](https://zanezee.github.io/Lua-Cheat-Sheet.md) by Zane
 * Intro to [Java](https://github.com/gusflame/intermediatepro/blob/master/javacheatsheet.md) by Edi
 * Intro to [Python](https://github.com/alhasan67/Python/blob/master/Python%20Cheatsheet.md) by Mohammed
-* Intro to [List](https://github.com/JasonMetzner/MarkdownLisp/blob/master/MarkdownLisp.md)
+* Intro to [Lisp](https://github.com/JasonMetzner/MarkdownLisp/blob/master/MarkdownLisp.md) by J
 
 # Web and the DOM
 * Intro to [HTML](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/html.md) and [example](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/Index.html) by Matthew
@@ -15,7 +15,7 @@
 * Intro to [JS](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/js.md) and example p5js [sketch](https://github.com/gonzalezm6/Cheat-Sheet/blob/master/sketch.js) by Matthew
 
 # Tools
-* Intro to [Vim](https://github.com/boyerk/Cheatsheet/blob/master/Vim%20Cheat%20Sheet.md)
+* Intro to [Vim](https://github.com/boyerk/Cheatsheet/blob/master/Vim%20Cheat%20Sheet.md) by Kane
 * Intro to [GitHub](https://github.com/gucheng0712/CheatSheet/blob/master/GitHub-CheatSheet.md) by Tom
 
 # Frameworks
