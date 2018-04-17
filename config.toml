@@ -1,9 +1,10 @@
-baseurl = "https://compute-institute.com/"
+baseurl = "http://leetusman.com/intermediate-programming"
 # remember trailing / at end of baseurl
 languageCode = "en-us"
 title = "Intermediate Programming @Woodbury"
 paginate = 50
 theme = "sublime-hugo-theme"
+publishDir = "docs"
 
 [permalinks]
 	post = "/:year/:month/:day/:slug"
