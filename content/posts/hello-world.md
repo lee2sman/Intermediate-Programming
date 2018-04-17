@@ -10,7 +10,7 @@ categories = [
 type = "post"
 +++
 
-![Hello Kitty](/images/computer.jpg)
+![Hello Kitty](images/computer.jpg)
 
 # Hello
 
