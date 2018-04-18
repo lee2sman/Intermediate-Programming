@@ -1,20 +1,36 @@
-function setup() {
-    
-//Initialize Firebase
-	let config = {
-		apikey: "",
-		authDomain: "",
-		databaseURL: "",
-		storageBucket: "",
-		messagingSenderID: "",
-	};
-	firebase.initializeApp(config); 
+let database;
 
-	//let's test it - we can check in browser console to make sure no errors
-	console.log(firebase);
+function setup() {
+  var config = {
+   apiKey: "",
+   authDomain: "",
+   databaseURL: "",
+   projectId: "",
+   storageBucket: "",
+   messagingSenderId: ""
+ };
+ firebase.initializeApp(config);
+
+ console.log(firebase);
+
+ database = firebase.database();
+ 
+ let ref = database.ref('score');
+    
+ let data = {
+     name: "Ben",
+     score: -1
+ }    
+    
+ ref.push(data);
+    
+    
+    
+    //INTERFACE
+    
+    
 }
 
 function draw() {
-   
-
+    
 }
