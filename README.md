@@ -1,5 +1,7 @@
 # Intermediate Programming
 
+[WEBSITE LINK](http://leetusman.com/intermediate-programming)
+
 This course introduces advanced programming concepts through the construction of interactive experiences for the web by building on programming fundamentals learned in the introductory programming course. Students will learn software design patterns, synchronous and asynchronous programming, unit testing, version control, hosting, data formats and how to work with an API. Students will create interactive works using a variety of backend and frontend technologies. Possible projects include interactive data visualization, networked games, and responsive design.
 
 ## Info
@@ -105,22 +107,23 @@ This course introduces advanced programming concepts through the construction of
 * [In-class notes](classes/week11.md)
 * Data persistence
 * Authentication
-* Express routes
-* Creating your own API with Node and Express
-* CORS
 * Student presentations on Alexa Skills
 
 # Week 12
-* Student presentations: Final project proposal
+* [In-class notes](classes/week12.md)
 * Overview of other Javascript libraries for graphic and games
-* P5Play or Phaser.JS for detecting collisions and working with game sprites
-* HammerJS for touch control
-* Three.JS for 3D graphics
-* Project: Creating a networked game or drawing program
+* Learning/Bootstrapping languages and frameworks- *How to Learn!*
+* Express routes
+* CORS
+* Creating your own API with Node and Express
 
 # Week 13
-* Work in progress
-* Guest speaker
+* [In-class notes](classes/week13.md)
+* Intro to *Persistence*
+* saving to database/server
+* Firebase
+* Final project intro work
+* Browser Extensions/publishing
 
 # Week 14
 * User testing
