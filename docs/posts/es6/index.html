@@ -4,7 +4,7 @@
 
  <html class="no-js"> 
 <head>
-    <title>Create a Twitter Bot  &middot; Intermediate Programming @Woodbury </title>
+    <title>Intro to Javascript ES6  &middot; Intermediate Programming @Woodbury </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="content-language" content="en-us" />
@@ -49,86 +49,17 @@
                     </time>
                     </h5>
                 </div>
-                <h1 class="page-title" itemprop="name headline">Create a Twitter Bot</h1>
+                <h1 class="page-title" itemprop="name headline">Intro to Javascript ES6</h1>
                 <div itemprop="articleBody">
                     
 
-<p><img src="http://lee2sman.github.io/intermediate-programming/images/bot.jpg" alt="twitter bot" /></p>
+<h1 id="es6">ES6</h1>
 
-<h2 id="making-a-twitter-bot">Making A Twitter Bot</h2>
+<h1 id="resources">Resources</h1>
 
-<ol>
-<li>Create a twitter account</li>
-<li>Create an app in your developer page. You need to connect a phone number. You can get a free Google voice or Twilio number.</li>
-<li>Enter an app name, description, and website. Leave the “callback” field blank.</li>
-<li>Go to <em>Keys and Access Tokens</em> to get your <em>Consumer Key (API Key)</em> and <em>Consumer Secret (API Secret)</em></li>
-<li>Click to <em>Generate Access Token</em> for your Access Token and Access Token Secret</li>
-</ol>
-
-<h2 id="authenticate-with-twit">Authenticate with Twit</h2>
-
-<p>1.</p>
-
-<pre><code>npm install Twit --save
-</code></pre>
-
-<p>2.</p>
-
-<p>Put your keys in a private config.js file.</p>
-
-<pre><code>//config.js
-module.exports = {
-  consumer_key:         'YOURCONSUMERKEY',
-  consumer_secret:      'YOURCONSUMERSECRET',
-  access_token:         'YOURACCESSTOKEN',
-  access_token_secret:  'YOURACCESSTOKENSECRET'
-}
-</code></pre>
-
-<p>3.
-//This will be our main JS file
-//main.js</p>
-
-<ol>
-<li>Access Twit and your config.js with the <em>require</em> command.</li>
-</ol>
-
-<pre><code>//use Twit node package
-let Twit = require('twit');
-//use our config.js file
-let config = require('./config.js');
-
-//make a Twit object to connect to the API
-var T = new Twit(config);
-
-// Start once
-tweeter(); //this function is defined in the twit module
-
-// Once every N milliseconds
-setInterval(tweeter, 60*5*1000);
-
-// Here is the bot!
-function tweeter() {
-
-name = [&quot;Lee&quot;, &quot;Brian&quot;, &quot;Joseph&quot;, &quot;Ben&quot;, &quot;Matthew&quot;, &quot;J&quot;, &quot;Mohammed&quot;];
-
-let tweet = &quot;I pick &quot;+name[Math.floor((Math.random() * name.length))];
-
-//post the tweet
-T.post('statuses/update', {
-  status: tweet
-}, tweeted);
-
-//callback when Tweet is sent.
-function tweeted(err, data response) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('Success: '+data.text);
-  }
- };
-}
-</code></pre>
+<ul>
+<li>Babel&rsquo;s <a href="https://babeljs.io/learn-es2015">Learn ES6</a> tutorial</li>
+</ul>
                     
                 </div>
                 <div class="feat share">
@@ -148,13 +79,13 @@ function tweeted(err, data response) {
 
     <div class="next-prev-arrows">
         
-            <a rel="next" href="http://lee2sman.github.io/intermediate-programming/posts/deploying-bots-to-amazon/" id="next">
-                &larr; <span class="nav-title nav-title-next">Botmaking - Deploying to Amazon</span> 
+            <a rel="next" href="http://lee2sman.github.io/intermediate-programming/posts/botmaking-create-a-twitter-bot/" id="next">
+                &larr; <span class="nav-title nav-title-next">Create a Twitter Bot</span> 
             </a>
         
         
-            <a rel="prev" href="http://lee2sman.github.io/intermediate-programming/posts/es6/" id="prev">
-                 <span class="nav-title nav-title-prev">Intro to Javascript ES6</span> &rarr;
+            <a rel="prev" href="http://lee2sman.github.io/intermediate-programming/posts/botmaking-reading-list/" id="prev">
+                 <span class="nav-title nav-title-prev">Intro to Botmaking - Reading List</span> &rarr;
             </a>
         
     </div>
