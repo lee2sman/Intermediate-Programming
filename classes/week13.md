@@ -14,9 +14,13 @@ So far in this course we have created a local server on our own computer, using 
 
 ## Firebase
 
-1. Create a new project
-2. Give it a name
-3. When it finishes creating, click *Add Firebase to your web app*
+1. Go to [firebase](http://firebase.google.com) and sign up for an account.
+2. Click Go To Console.
+3. Click *Databases* and choose *Realtime*
+4. Start in test mode and click enable.
+
+
+3. Create a new project and give it a name and click continue when  finished
 4. Your authentication info will appear.
 5. Copy the first line, which will link your project to the current Firebase CDN
 6. Copy the tokens/passes and put it your setup function
