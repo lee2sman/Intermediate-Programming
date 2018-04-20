@@ -27,8 +27,22 @@ Your app/program must include:
 
 # Example projects
 
-[Die With Me](https://www.youtube.com/watch?v=XV5z1PRmwU4) by Dries Depoorter
-[PplKpr](http://pplkpr.com/) and [Social Turkers](http://lauren-mccarthy.com/Social-Turkers) by [Lauren McCarthy](http://http://lauren-mccarthy.com/)
-[Somebody](http://somebodyapp.com/) by Miranda July
-[Plink](http://labs.dinahmoe.com/plink/) by Dinah Moe
-[The Peanut Gallery](https://www.peanutgalleryfilms.com/) by Google Data Arts Team
+* [Die With Me](https://www.youtube.com/watch?v=XV5z1PRmwU4) by Dries Depoorter
+* [PplKpr](http://pplkpr.com/) and [Social Turkers](http://lauren-mccarthy.com/Social-Turkers) by [Lauren McCarthy](http://http://lauren-mccarthy.com/)
+* [Somebody](http://somebodyapp.com/) by Miranda July
+* [Plink](http://labs.dinahmoe.com/plink/) by Dinah Moe
+* [The Peanut Gallery](https://www.peanutgalleryfilms.com/) by Google Data Arts Team
+
+# Consider some of these frameworks
+
+* Building an online networked game - clone of [Agar.io](http://agar.io/) - video tutorials - [Game mechanics](https://www.youtube.com/watch?v=JXuxYMGe4KI) and [multiplayer networking](https://www.youtube.com/watch?v=ZjVyKXp9hec)  - Uses P5JS and node and socket.io
+* Making a game with [P5Play](http://p5play.molleindustria.org) - [example](http://p5play.molleindustria.org/examples/index.html?fileName=collisions4.js) - uses p5js and p5play
+* Make a choose-your-own-adventure style game with Alexa. [article](https://killscreen.com/articles/creating-voice-driven-interactive-fiction-just-got-lot-easier/) and [Amazon](https://developer.amazon.com/blogs/post/TxEQV5K754YS77/Announcing-a-New-Tool-for-Building-Interactive-Adventure-Games-on-Alexa) tutorial - uses Amazon/Alexa publisher kit
+* Image-posting twitter bot [tutorial](https://botwiki.org/tutorials/make-an-image-posting-twitter-bot/)  and [github repo](https://github.com/fourtonfish/random-image-twitterbot) - uses node, twit, and a server
+
+# MORE SOCKET.IO Tutorials
+* shared [Chat Room](https://socketio-chat-room.glitch.me/) // [code](https://glitch.com/edit/#!/socketio-chat-room?path=README.md:1:0) on Glitch
+* shared [Drawing](https://shared-drawing.glitch.me/) // [Edit](https://glitch.com/edit/#!/shared-drawing?path=README.md:1:0) on Glitch
+* [Agar.io-style](https://agario-lite.glitch.me/) Game // [Edit](https://glitch.com/edit/#!/agario-lite?path=README.md:1:0) on Glitch
+
+These tutorials and an intro to Socket.io by [Todd Words](https://github.com/toddwords/socketio-intro) 
