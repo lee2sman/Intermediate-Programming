@@ -46,3 +46,37 @@ Your app/program must include:
 * [Agar.io-style](https://agario-lite.glitch.me/) Game // [Edit](https://glitch.com/edit/#!/agario-lite?path=README.md:1:0) on Glitch
 
 These tutorials and an intro to Socket.io by [Todd Words](https://github.com/toddwords/socketio-intro) 
+
+
+# Warm-up
+
+Hi, I updated the final project page.
+
+AS SOON AS POSSIBLE, and by MONDAY at the latest:
+
+Email me:
+
+1. final project title
+2. 1-3 sentence description
+3. What frameworks and/or example code are you using
+4. OPTIONAL: sketches and/or links to example images online
+
+## NEW RESOURCES
+
+*Have you been unable to come up with a project idea?* 
+
+PICK ONE OF THE BELOW:
+
+1. Consider making a multiplayer game
+
+    A tutorial for building a clone of Agar.io style multiplayer game with p5js on the page linked above!
+
+2. Make a twitter bot that works with an API
+
+    You know how to do this! You've made bots! You've worked with APIs! Figure out a good combo! (Tweeting out pictures, high scores, art, weather, etc)
+
+3. Make a better example of your Alexa project, or build a multi-choice adventure game with Alexa
+
+    Examples and links to starter code with p5js on the page linked above!
+
+EMAIL ME THE ABOVE ANSWERS to the questions I posed by Monday! Thanks!
